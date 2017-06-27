@@ -1,0 +1,7 @@
+/** Your theme modifications here **/
+
+body {
+	background-image: url("/images/bg.png");
+	background-repeat: no-repeat;
+	background-color: #fff;
+}
