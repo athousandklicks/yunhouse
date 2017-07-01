@@ -4,4 +4,33 @@ body {
 	background-image: url("/images/bg.png");
 	background-repeat: no-repeat;
 	background-color: #fff;
+	font:12px 'Helvetica Neue', Helvetica, arial;
+	background-size:contain;
 }
+
+p.lead {
+	font-weight: 100;
+}
+
+.box.home {
+	padding: 20px 0 0 0;
+	text-align: center;
+}
+
+#content #blog-post #post-content {
+	font:'Helvetica Neue', Helvetica, arial;
+	margin-bottom: 30px;
+	font-size: 18px;
+	letter-spacing: 1px;
+	line-height: 160%;
+	word-spacing: 1px;
+	font-weight: 400;
+}
+
+
+.yamm .dropdown.yamm-fw .dropdown-menu {
+	left: 0;
+	right: 0;
+}
+
+

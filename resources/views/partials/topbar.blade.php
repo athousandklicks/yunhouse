@@ -3,7 +3,7 @@
     <div id="top">
         <div class="container">
             <div class="col-md-6 offer" data-animate="fadeInDown">
-                <a href="#" class="btn btn-success btn-sm" data-animate-hover="shake">Free Offer</a>  <a href="#">Become a Member of Palava Hall and Download Yunhouse for Free</a>
+                <a href="#" class="btn btn-success btn-sm" data-animate-hover="shake">Download Yunhouse</a>  <a href="#">Become a Member of Palava Hall and Download Yunhouse for Free</a>
             </div>
             <div class="col-md-6" data-animate="fadeInDown">
                 <ul class="menu">
@@ -11,10 +11,7 @@
                     </li>
                     <li><a href="register.html">Register</a>
                     </li>
-                    <li><a href="contact.html">Contact</a>
-                    </li>
-                    <li><a href="#">Recently viewed</a>
-                    </li>
+
                 </ul>
             </div>
         </div>
@@ -24,7 +21,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title" id="Login">Customer login</h4>
+                        <h4 class="modal-title" id="Login">Enter Palavar Hall</h4>
                     </div>
                     <div class="modal-body">
                         <form action="customer-orders.html" method="post">
@@ -41,8 +38,8 @@
 
                         </form>
 
-                        <p class="text-center text-muted">Not registered yet?</p>
-                        <p class="text-center text-muted"><a href="register.html"><strong>Register now</strong></a>! It is easy and done in 1&nbsp;minute and gives you access to special discounts and much more!</p>
+                        <p class="text-center text-muted">Not a Member of Palavar Hall?</p>
+                        <p class="text-center text-muted"><a href="register.html"><strong>Become a Member now</strong></a>! It is easy and done in 1&nbsp;minute and gives you access to YUNHOUSE discussion forum on THE AFRICA</p>
 
                     </div>
                 </div>
