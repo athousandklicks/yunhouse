@@ -4,7 +4,7 @@
 <head>
 	@include('partials.head')
 </head>
-
+@yield('stylesheet')
 
 <body>
 

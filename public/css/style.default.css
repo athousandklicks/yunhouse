@@ -275,8 +275,8 @@ h1 {
   clear: both;
 }
 .box .box-footer {
-  background: #f7f7f7;
-  margin: 30px -20px -20px;
+  background: #08205b;
+  margin: 30px -20px -0px;
   padding: 20px;
   border-top: solid 1px #eeeeee;
 }
@@ -888,15 +888,16 @@ h1 {
   font-weight: 300;
 }
 #footer {
-  background: #e0e0e0;
-  padding: 20px 0;
+
+
 }
+
 #footer ul {
   padding-left: 0;
   list-style: none;
 }
 #footer ul a {
-  color: #999999;
+  color: #ffffff;
 }
 #footer .social {
   text-align: left;
@@ -922,25 +923,49 @@ h1 {
   line-height: 30px;
 }
 #footer .social a.facebook:hover {
+  background-color: #555555;
+}
+
+#footer .social a.facebook {
   background-color: #4460ae;
 }
+
 #footer .social a.gplus:hover {
+  background-color: #555555;
+}
+
+#footer .social a.gplus {
   background-color: #c21f25;
 }
 #footer .social a.twitter:hover {
+  background-color: #555555;
+}
+
+#footer .social a.twitter {
   background-color: #3cf;
 }
+
 #footer .social a.instagram:hover {
+  background-color: #555555;
+}
+
+#footer .social a.instagram {
   background-color: #cd4378;
 }
+
 #footer .social a.email:hover {
+  background-color: #555555;
+}
+
+#footer .social a.email {
   background-color: #4a7f45;
 }
+
 #copyright {
-  background: #333;
-  color: #ccc;
+  background: #040e28;
+  color: #ffffff;
   padding: 20px 0;
-  font-size: 12px;
+  font-size: 14px;
 }
 #copyright p {
   margin: 0;

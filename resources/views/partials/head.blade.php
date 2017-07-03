@@ -7,7 +7,7 @@
     <meta name="keywords" content="YUNHOUSE: Assorted London Tales about the Africa">
 
     <title>
-        YUNHOUSE: Assorted London Tales about the Africa
+        YUNHOUSE: @yield('title')
     </title>
 
     <meta name="keywords" content="">

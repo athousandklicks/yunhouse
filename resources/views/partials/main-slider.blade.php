@@ -1,15 +1,15 @@
                     <div id="main-slider">
                         <div class="item">
-                            <img src="/images/main-slider1.jpg" alt="" class="img-responsive">
+                            <img src="/images/slides/main-slider1.png" alt="" class="img-responsive">
                         </div>
                         <div class="item">
-                            <img class="img-responsive" src="/images/main-slider2.jpg" alt="">
+                            <img class="img-responsive" src="/images/slides/main-slider1.png" alt="">
                         </div>
                         <div class="item">
-                            <img class="img-responsive" src="/images/main-slider3.jpg" alt="">
+                            <img class="img-responsive" src="/images/slides/main-slider1.png" alt="">
                         </div>
                         <div class="item">
-                            <img class="img-responsive" src="/images/main-slider4.jpg" alt="">
+                            <img class="img-responsive" src="/images/slides/main-slider1.png" alt="">
                         </div>
                     </div>
                     <!-- /#main-slider -->
