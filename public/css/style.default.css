@@ -19,8 +19,11 @@ h1 {
   font-size: 40px;
 }
 #top {
-  background: #555555;
-  padding: 10px 0;
+      background-image: url("/images/static_images/footerbg1.png");
+    background-size:contain;  
+  margin-top: 5px;
+
+  padding: 15px 0;
 }
 #top .offer {
   color: #fff;
@@ -897,7 +900,9 @@ h1 {
   list-style: none;
 }
 #footer ul a {
+  font-weight: 100;
   color: #ffffff;
+  line-height: 27px;
 }
 #footer .social {
   text-align: left;
@@ -1104,7 +1109,7 @@ h1 {
 .navbar {
   font-family: 'Helvetica Neue', Helvetica, arial;
   min-height: 70px;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   border: none;
   border-bottom: 1px solid transparent;
 }
@@ -1296,7 +1301,7 @@ h1 {
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #555555;
-  background-color: #ffffff;
+  background-color: #4fbfa8;
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,

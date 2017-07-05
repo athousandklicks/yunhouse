@@ -2,6 +2,10 @@
 
 @section('title', '| YUNHOUSE: Assorted London Tales about the Africa')
 
+@section('stylesheet')
+{{ Html::style('/css/custom-homepage.css') }}
+@stop
+
 
 @section('content')
 

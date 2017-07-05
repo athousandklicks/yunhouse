@@ -1,9 +1,11 @@
 /** Your theme modifications here **/
 
 body {
-
+	background-image: url("/images/bg.png");
+	background-repeat: no-repeat;
 	background-color: #fff;
 	font:12px 'Helvetica Neue', Helvetica, arial;
+	background-size:contain;
 }
 
 #footer {
