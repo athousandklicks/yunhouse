@@ -3,7 +3,7 @@
     <div id="top">
         <div class="container">
             <div class="col-md-6 offer" data-animate="fadeInDown">
-                <a href="#" class="btn btn-success btn-sm" data-animate-hover="shake">Download Yunhouse</a>  <a href="#">Become a Member of Palava Hall and Download Yunhouse for Free</a>
+                <a href="#" class="btn btn-success btn-sm" data-animate-hover="shake">Download Yunhouse</a>  <a href="#">Join Palavar Hall and Download Yunhouse for Free</a>
             </div>
             <div class="col-md-6" data-animate="fadeInDown">
                 <ul class="menu">

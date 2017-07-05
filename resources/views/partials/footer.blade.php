@@ -7,13 +7,13 @@
                 <h4 class='footer-h4'>Pages</h4>
 
                 <ul>
-                    <li><a href="text.html">Yunhouse in Brief</a>
+                    <li><a href="/yunhouse-in-brief">Yunhouse in Brief</a>
                     </li>
-                    <li><a href="text.html">About the Author</a>
+                    <li><a href="/about-author">About the Author</a>
                     </li>
-                    <li><a href="faq.html">Dreaming Yunhouse</a>
+                    <li><a href="/dreaming-yunhouse">Dreaming Yunhouse</a>
                     </li>
-                    <li><a href="contact.html">Palavar Hall</a>
+                    <li><a href="/palavar">Palavar Hall</a>
                     </li>
                 </ul>
 
@@ -29,7 +29,7 @@
                 <ul>
                    <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a>
                    </li>
-                   <li><a href="register.html">Register</a>
+                   <li><a href="#">Register</a>
                    </li>
                </ul>
         </div>

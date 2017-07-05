@@ -17,7 +17,7 @@
                     </button>
 
                     <a class="btn btn-default navbar-toggle" href="basket.html">
-                        <i class="fa fa-book"></i>  <span class="hidden-xs">READ TALE OF THE MONTH</span>
+                        <i class="fa fa-book"></i>  <span class="hidden-xs">TALE OF THE MONTH</span>
                     </a>
                 </div>
             </div>
@@ -305,7 +305,7 @@
                                         <div class="navbar-buttons">
 
                                             <div class="navbar-collapse collapse right" id="basket-overview">
-                                                <a href="basket.html" class="btn btn-primary navbar-btn"><i class="fa fa-book"></i><span class="hidden-sm">READ TALE OF THE MONTH</span></a>
+                                                <a href="basket.html" class="btn btn-primary navbar-btn"><i class="fa fa-book"></i><span class="hidden-sm">TALE OF THE MONTH</span></a>
                                             </div>
                                             <!--/.nav-collapse -->
 
