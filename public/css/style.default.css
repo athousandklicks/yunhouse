@@ -19,12 +19,35 @@ h1 {
   font-size: 40px;
 }
 #top {
-      background-image: url("/images/static_images/footerbg1.png");
-    background-size:contain;  
-  margin-top: 5px;
+  background-image: url("/images/static_images/footerbg1.png");
+  background-repeat-y: no-repeat;
+  background-size:contain;  
+  padding: 5px 0;
+  padding-top: 0px;
 
-  padding: 15px 0;
 }
+
+.top-heading{
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 100px;
+  font-weight: 900;
+  float:left;
+    text-align: center;
+  vertical-align: middle;
+  margin-top: 0px;
+
+}
+
+.heading-image {
+  float: right;
+  height: 60px;
+  width: 60px;
+}
+
+
+
+
 #top .offer {
   color: #fff;
   width: 50%;
@@ -1005,10 +1028,10 @@ h1 {
  * 
  * http://geedmo.github.com/yamm3
  */
-.yamm .nav,
-.yamm .collapse,
-.yamm .dropup,
-.yamm .dropdown {
+ .yamm .nav,
+ .yamm .collapse,
+ .yamm .dropup,
+ .yamm .dropdown {
   position: static;
 }
 .yamm .container {
@@ -1340,8 +1363,8 @@ h1 {
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-  background-color: #717173;
-  color: #ffffff;
+    background-color: #717173;
+    color: #ffffff;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
