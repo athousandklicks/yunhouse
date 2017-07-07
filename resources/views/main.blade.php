@@ -7,25 +7,19 @@
 @yield('stylesheet')
 
 <body>
+	<div id="main-wrapper" class="homepage-two">
 
-	<!-- *** TOPBAR *** -->
-	@include('partials.topbar')
-	<!-- *** TOP BAR END *** -->
+		@include('partials.topbar')
 
+		@include('partials.nav')
 
-	<!-- *** NAVBAR *** -->
-	@include('partials.nav')
-	<!-- *** NAVBAR END *** -->
-
-
-	<!-- *** BODY CONTENT *** -->
-	<div id="all">
-		@yield('content')
+		<div class="container">
+			@yield('content')
+		</div>
 
 		@include('partials.footer')
-	</div>
-	<!-- /#all -->    
-	<!-- *** BODY CONTENT END *** -->
+	</div><!--/#main-wrapper-->    
+
 
 	@include('partials.javascripts')
 

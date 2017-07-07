@@ -1,52 +1,50 @@
-    <!-- *** TOPBAR ***
-    _________________________________________________________ -->
-    <div id="top">
-
-        <div class="container">
-            <div class="col-md-12" data-animate="fadeInDown">
-                <div class="col-md-3">
-                    <img src="images/static_images/book-logo.png" class="heading-image" alt="">
+<div class="topbar">
+            <div class="container">
+                <div id="date-time"></div>
+                <div id="topbar-right">
+                    <div class="dropdown language-dropdown">                        
+                        <a data-toggle="dropdown" href="#"><span class="change-text">En</span> <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu language-change">
+                            <li><a href="#">EN</a></li>
+                            <li><a href="#">FR</a></li>
+                            <li><a href="#">GR</a></li>
+                            <li><a href="#">ES</a></li>
+                        </ul>                               
+                    </div>              
+                    <div id="weather"></div>
+                    <div class="searchNlogin">
+                        <ul>
+                            <li class="search-icon"><i class="fa fa-search"></i></li>
+                            <li class="dropdown user-panel"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i></a>
+                                <div class="dropdown-menu top-user-section">
+                                    <div class="top-user-form">
+                                        <form id="top-login" role="form">
+                                            <div class="input-group" id="top-login-username">
+                                                <span class="input-group-addon"><img src="/images/others/user-icon.png" alt="" /></span>
+                                                <input type="text" class="form-control" placeholder="Username" required="">
+                                            </div>
+                                            <div class="input-group" id="top-login-password">
+                                                <span class="input-group-addon"><img src="/images/others/password-icon.png" alt="" /></span>
+                                                <input type="password" class="form-control" placeholder="Password" required="">
+                                            </div>
+                                            <div>
+                                                <p class="reset-user">Forgot <a href="#">Password/Username?</a></p>
+                                                <button class="btn btn-danger" type="submit">Login</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="create-account">
+                                        <a href="#">Create a New Account</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="search">
+                            <form role="form">
+                                <input type="text" class="search-form" autocomplete="off" placeholder="Type & Press Enter">
+                            </form>
+                        </div> <!--/.search--> 
+                    </div><!-- searchNlogin -->
                 </div>
-            
-
-            <div class="col-md-6">
-                <h1 class="top-heading">yunhouse</h1>
             </div>
         </div>
-        </div>
-
-    </div>
-    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
-        <div class="modal-dialog modal-sm">
-
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="Login">Enter Palavar Hall</h4>
-                </div>
-                <div class="modal-body">
-                    <form action="customer-orders.html" method="post">
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="email-modal" placeholder="email">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" id="password-modal" placeholder="password">
-                        </div>
-
-                        <p class="text-center">
-                            <button class="btn btn-primary"><i class="fa fa-sign-in"></i> Log in</button>
-                        </p>
-
-                    </form>
-
-                    <p class="text-center text-muted">Not a Member of Palavar Hall?</p>
-                    <p class="text-center text-muted"><a href="register.html"><strong>Become a Member now</strong></a>! It is easy and done in 1&nbsp;minute and gives you access to YUNHOUSE discussion forum on THE AFRICA</p>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-    <!-- *** TOP BAR END *** -->

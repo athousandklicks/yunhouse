@@ -1,32 +1,29 @@
     <meta charset="utf-8">
-    <meta name="robots" content="all,follow">
-    <meta name="googlebot" content="index,follow,snippet,archive">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="YUNHOUSE: Assorted London Tales about the Africa">
-    <meta name="author" content="YUNHOUSE: Assorted London Tales about the Africa">
-    <meta name="keywords" content="YUNHOUSE: Assorted London Tales about the Africa">
-
-    <title>
-        YUNHOUSE: @yield('title')
-    </title>
-
-    <meta name="keywords" content="">
-
-    <link href='http://fonts.googleapis.com/css?family=Helvetica Neue:400,500,700,300,100' rel='stylesheet' type='text/css'>
-
-    <!-- styles -->
-    <link href="/css/font-awesome.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--title-->
+    <title> YUNHOUSE: @yield('title')</title>
+    
+    <!--CSS-->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/animate.min.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/magnific-popup.css" rel="stylesheet">
     <link href="/css/owl.carousel.css" rel="stylesheet">
-    <link href="/css/owl.theme.css" rel="stylesheet">
-
-    <!-- theme stylesheet -->
-    <link href="/css/style.default.css" rel="stylesheet" id="theme-stylesheet">
-
-    <!-- your stylesheet with modifications -->
-    <link href="/css/custom.css" rel="stylesheet">
-
-    <script src="/js/respond.min.js"></script>
-
-    <link rel="shortcut icon" href="favicon.png">
+    <link href="/css/subscribe-better.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+    <link id="preset" rel="stylesheet" type="text/css" href="/css/presets/preset1.css">
+    <link href="/css/responsive.css" rel="stylesheet">       
+    
+    <!--Google Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Signika+Negative:400,300,600,700' rel='stylesheet' type='text/css'>
+    
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="/images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/images/ico/apple-touch-icon-57-precomposed.png">

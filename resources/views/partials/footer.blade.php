@@ -1,90 +1,95 @@
-  <!-- *** FOOTER ***
-  _________________________________________________________ -->
-  <div id="footer" data-animate="fadeInUp">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 col-sm-6">
-                <h4 class='footer-h4'>Pages</h4>
-
-                <ul>
-                    <li><a href="/yunhouse-in-brief">Yunhouse in Brief</a>
-                    </li>
-                    <li><a href="/about-author">About the Author</a>
-                    </li>
-                    <li><a href="/dreaming-yunhouse">Dreaming Yunhouse</a>
-                    </li>
-                    <li><a href="/palavar">Palavar Hall</a>
-                    </li>
-                </ul>
-
-                <hr class="hidden-md hidden-lg hidden-sm">
-
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container text-center">
+          <div class="logo-icon"><img class="img-responsive" src="images/presets/preset1/logo-icon.png" alt="" /></div>
+        </div>
+      </div>
+      <div class="footer-menu">
+        <div class="container">
+          <ul class="nav navbar-nav">                       
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Advertisement</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul> 
+        </div>
+      </div>
+      <div class="bottom-widgets">
+        <div class="container">
+          <div class="col-sm-4">
+            <div class="widget">
+              <h2>Category</h2> 
+              <ul>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Politics</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">World</a></li>
+                <li><a href="#">Technology</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Environment</a></li>
+                <li><a href="#">Health</a></li>
+                <li><a href="#">Entertainment</a></li>
+                <li><a href="#">Lifestyle</a></li>
+              </ul>
             </div>
-            <!-- /.col-md-3 -->
-
-            <div class="col-md-3 col-sm-6">
-
-                <h4 class='footer-h4'>User section</h4>
-
-                <ul>
-                   <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a>
-                   </li>
-                   <li><a href="#">Register</a>
-                   </li>
-               </ul>
+          </div>
+          <div class="col-sm-2">
+            <div class="widget">
+              <h2>Editions</h2> 
+              <ul>
+                <li><a href="#">United States</a></li>
+                <li><a href="#">China</a></li>
+                <li><a href="#">India</a></li>
+                <li><a href="#">Maxico</a></li>
+                <li><a href="#">Middle East</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="widget">
+              <h2>Tag</h2> 
+              <ul>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Featured</a></li>
+                <li><a href="#">World</a></li>
+                <li><a href="#">Fashion</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Environment</a></li>
+                <li><a href="#">Health</a></li>
+                <li><a href="#">Entertainment</a></li>
+                <li><a href="#">Lifestyle</a></li>
+                <li><a href="#">Business</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Tech</a></li>
+                <li><a href="#">Movie</a></li>
+                <li><a href="#">Music</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="widget">
+              <h2>Products</h2> 
+              <ul>
+                <li><a href="#">Ebook</a></li>
+                <li><a href="#">Baby Product</a></li>
+                <li><a href="#">Magazine</a></li>
+                <li><a href="#">Sports Elements</a></li>              
+                <li><a href="#">Technology</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <!-- /.col-md-3 -->
-
-        <div class="col-md-3 col-sm-6">
-
-            <h4 class='footer-h4'>Book Section</h4>
-
-<button class="btn btn-default" type="button">Write a Review</button>
-
+      </div>
+      <div class="footer-bottom">
+        <div class="container text-center">
+          <p><a href="#">NewsPress </a>&copy; 2015 </p>
         </div>
-        <!-- /.col-md-3 -->
-
-
-
-        <div class="col-md-3 col-sm-6">
-
-            <h4 class='footer-h4'>Stay in touch</h4>
-
-            <p class="social">
-                <a href="#" class="facebook external" data-animate-hover="shake"><i class="fa fa-facebook"></i></a>
-                <a href="#" class="twitter external" data-animate-hover="shake"><i class="fa fa-twitter"></i></a>
-                <a href="#" class="instagram external" data-animate-hover="shake"><i class="fa fa-instagram"></i></a>
-                <a href="#" class="gplus external" data-animate-hover="shake"><i class="fa fa-google-plus"></i></a>
-                <a href="#" class="email external" data-animate-hover="shake"><i class="fa fa-envelope"></i></a>
-            </p>
-
-
-        </div>
-        <!-- /.col-md-3 -->
-
-    </div>
-    <!-- /.row -->
-
-</div>
-<!-- /.container -->
-</div>
-<!-- /#footer -->
-
-<!-- *** FOOTER END *** -->
-
-
-        <!-- *** COPYRIGHT ***
-        _________________________________________________________ -->
-        <div id="copyright">
-            <div class="container">
-                <div class="col-md-6">
-                    <p class="pull-left">© Yunhouse.co.uk</p>
-
-                </div>
-                <div class="col-md-6">
-                    <p class="pull-right">Developed by <a href="https://bagusintegrated.com.ng" class ='bagus'>Bagus</a>
-                 </p>
-             </div>
-         </div>
-     </div>
-       <!-- *** COPYRIGHT END *** -->
+      </div>    
+    </footer>

@@ -1,10 +1,12 @@
-    <!-- *** SCRIPTS TO INCLUDE ***
-    _________________________________________________________ -->
-    <script src="js/jquery-1.11.0.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.cookie.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/modernizr.js"></script>
-    <script src="js/bootstrap-hover-dropdown.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/front.js"></script>
+    <!--/#scripts--> 
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="/js/owl.carousel.min.js"></script> 
+    <script type="text/javascript" src="/js/moment.min.js"></script> 
+    <script type="text/javascript" src="/js/jquery.simpleWeather.min.js"></script> 
+    <script type="text/javascript" src="/js/jquery.sticky-kit.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.easy-ticker.min.js"></script> 
+    <script type="text/javascript" src="/js/jquery.subscribe-better.min.js"></script> 
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script type="text/javascript" src="/js/switcher.js"></script>

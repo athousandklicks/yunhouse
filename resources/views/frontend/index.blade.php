@@ -2,101 +2,525 @@
 
 @section('title', '| YUNHOUSE: Assorted London Tales about the Africa')
 
-@section('stylesheet')
-{{ Html::style('/css/custom-homepage.css') }}
-@stop
-
 
 @section('content')
-
-<div id="content">
-
-    <div class="container">
-        <div class="col-md-12">
-            <!--put slider here-->
-            @include('partials.main-slider')
-            <!--End slider here-->
-        </div>
-    </div>
-
-            <!-- *** GET INSPIRED ***
-            _________________________________________________________ -->
-
-            <div id="content">
-                <div class="container" data-animate="fadeInUpBig">
-
-                    <div class="col-sm-12" id="blog-post">
-
-
-                        <div class="box">
-
-                            <h1>YUNHOUSE IN BRIEF</h1>
-
-                            <p class="lead">In the year 1884, in the German City of Berlin, representatives of major European nations gathered around a giant map of the continent of Africa for the biggest imperialistic banquet in the history of mankind. Slices of the Dark Continent were served out to satisfy imperial hunger for territories – The Scramble For Africa – that had reached fever pitch.</p>
-
-                            <div id="post-content">
-                                <p>There is no record of any Africans’ presence at the Berlin Conference. Nor any evidence that Africans were ever informed or knew about the meeting. In fact, Africans got to know about the carve-up of their continent when Europeans turned up on their homelands with all manner of ploys to assert and claim the territorial possessions as apportioned in Berlin. The process was called The Pacification Of The Natives.</p>
-                                <p class="read-more"><a href="/yunhouse-in-brief" class="btn btn-primary">Continue reading</a>
-                                </p>
+@include('partials.breaking-news')
+<div class="section">
+    <div class="row">
+        <div class="site-content col-md-9">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div id="home-slider">
+                        <div class="post feature-post">
+                            <div class="entry-header">
+                                <div class="entry-thumbnail">
+                                    <img class="img-responsive" src="images/post/slider/1.jpg" alt="" />
+                                </div>
+                                <div class="catagory world"><a href="#">World</a></div>
                             </div>
-                        </div>
-                        <!-- /.box -->
-                  </div>
-            </div>
-            <!-- /.container -->
-        </div>
-        <!-- /#content -->
-        <!-- *** GET INSPIRED END *** -->
-
-            <!-- *** BLOG HOMEPAGE ***
-            _________________________________________________________ -->
-
-
-                        <div class="container">
-
-                <div class="col-md-12" data-animate="fadeInUp">
-
-                    <div id="blog-homepage" class="row">
-                        <div class="col-sm-6">
-                            <div class="post">
-                            
-                                 <img src="images/static_images/mother-africa2.png" class="img img-responsive" alt="">
-                                 <hr>
-                                <p class="lead">The 20th Century was drawing to a close when the press release came: “ALL HUMANS ON PLANET EARTH ARE DESCENDED FROM AN AFRICAN WOMAN”.</p>
-
-<p class="lead">I screamed! to the hearing of all humans present in the London Fleet Street newsroom, where I was still swaggering in the euphoria of my very recently acquired status of first ever full-blooded African with a bona fide appellation of Fleet Street Journalist. The News Editor, who announced my appointment, said my position was an overdue 20th Century phenomenon that had been precipitated by a chance meeting at the 20th birthday party of his niece (student of Chinese language), whose current co-fornicator (an African who spoke and wrote fluent Japanese) had brought along (from Brixton) two African mates, one of whom spoke and wrote fluent Russian, and myself, an indigene of a former British Colony, where he (Fleet Street Editor) had been conceived (five decades earlier) during an imperial copulation between his father (Colonial Governor) and his mother (a blood relation of the last Emperor of Russia).</p>
-
-<p class="lead">‘The globe has become one village’, the News Editor proclaimed with much excitement. He got more excited when he learnt that I was currently engaged in pamphleteering on a subject that was burning – even as we spoke – on the streets of Brixton District in South London. Our publication, The Atlantic Storm, tracked day by the day the sordid details of Black people’s experience of the historic racial implosion with which Brixton eventually got baptised as Ethnic Headquarters Of Great Britain. The Atlantic Storm was in newspaper format and appeared daily, .</p>
-                                <p class="read-more"><a href="#" class="btn btn-primary">Read Full Tale</a>
-                                </p>
+                            <div class="post-content">                              
+                                <div class="entry-meta">
+                                    <ul class="list-inline">
+                                        <li class="publish-date"><i class="fa fa-clock-o"></i><a href="#"> Nov 1, 2015 </a></li>
+                                        <li class="views"><i class="fa fa-eye"></i><a href="#">15k</a></li>
+                                        <li class="loves"><i class="fa fa-heart-o"></i><a href="#">278</a></li>
+                                        <li class="comments"><i class="fa fa-comment-o"></i><a href="#">189</a></li>
+                                    </ul>
+                                </div>
+                                <h2 class="entry-title">
+                                    <a href="news-details.html">We Are Seeing The Effects Of The Minimum Wage Rise In San Francisco</a>
+                                </h2>
                             </div>
-                        </div>
-
-                        <div class="col-sm-6">
-                            <div class="post">
-                                
-                                <img src="images/static_images/welcome-to-yunhouse-watchout.png" class="img img-responsive" alt="">
-                                 <hr>
-                                <p class="lead">LAST CHRISTMAS HAPPENED one thousand nine hundred and seventy-three hours ago. I counted them. This is the sort of thing you do when you are actively hibernating, like I have been doing. And it came to pass, that for nearly two thousand hours I’ve consciously and very happily cheated the English winter. Thanks to the authorities of Yunhouse where the policy is not to spare North Sea gas so as to maintain tropicalised environment. (House Rule Number 1A: Yunhouse and all its appurtenances are African in every particular and must be so regarded at all times).</p>
-
-<p class="lead">However, this winter saw Yunhouse temperature rise well above tropical level. The source of that extra heat is my hibernation corner: Hut 007, a Yunhouse dwelling in which an African lived through World War One as well as World War Two and died in fear of counting any further. That African is Dr Cyril Naikule, LL.B, BA, MPhil, PhD. This is the famous Cy, pronounced sii-wai or see-why, depending on how much meaning you wish to attach to the name in the Yun-legend that says an African once lived, studied, wrote and died for the continent shaped like a question mark. Hut 007 holds the complete set of Something To Write Home About, the final title for a writing expedition that its author once thought to call Through A Black Eye. It is a neat arrangement of forty-seven volumes in hardback notebooks numbered with Roman numerals, the contents are penned in exquisite cursive of the days before the skill of handwriting became separated from the art of calligraphy. </p>
-                                <p class="read-more"><a href="#" class="btn btn-primary">Release Date: 01/10/17</a>
-                                </p>
+                        </div><!--/post--> 
+                        <div class="post feature-post">
+                            <div class="entry-header">
+                                <div class="entry-thumbnail">
+                                    <img class="img-responsive" src="images/post/slider/7.jpg" alt="" />
+                                </div>
+                                <div class="catagory sports"><a href="#">Sports</a></div>
                             </div>
-
-                        </div>
-
+                            <div class="post-content">                              
+                                <div class="entry-meta">
+                                    <ul class="list-inline">
+                                        <li class="publish-date"><i class="fa fa-clock-o"></i><a href="#"> Nov 1, 2015 </a></li>
+                                        <li class="views"><i class="fa fa-eye"></i><a href="#">15k</a></li>
+                                        <li class="loves"><i class="fa fa-heart-o"></i><a href="#">278</a></li>
+                                        <li class="comments"><i class="fa fa-comment-o"></i><a href="#">189</a></li>
+                                    </ul>
+                                </div>
+                                <h2 class="entry-title">
+                                    <a href="news-details.html">The 20 moments in sports that tried to break the Internet in 2015</a>
+                                </h2>
+                            </div>
+                        </div><!--/post--> 
+                        <div class="post feature-post">
+                            <div class="entry-header">
+                                <div class="entry-thumbnail">
+                                    <img class="img-responsive" src="images/post/slider/13.jpg" alt="" />
+                                </div>
+                                <div class="catagory entertainment"><a href="#">Entertainment</a></div>
+                            </div>
+                            <div class="post-content">                              
+                                <div class="entry-meta">
+                                    <ul class="list-inline">
+                                        <li class="publish-date"><i class="fa fa-clock-o"></i><a href="#"> Nov 1, 2015 </a></li>
+                                        <li class="views"><i class="fa fa-eye"></i><a href="#">15k</a></li>
+                                        <li class="loves"><i class="fa fa-heart-o"></i><a href="#">278</a></li>
+                                        <li class="comments"><i class="fa fa-comment-o"></i><a href="#">189</a></li>
+                                    </ul>
+                                </div>
+                                <h2 class="entry-title">
+                                    <a href="news-details.html">The best games in 2015 for your new iPhone, iPad, or Android phone</a>
+                                </h2>
+                            </div>
+                        </div><!--/post--> 
+                        <div class="post feature-post">
+                            <div class="entry-header">
+                                <div class="entry-thumbnail">
+                                    <img class="img-responsive" src="images/post/slider/12.jpg" alt="" />
+                                </div>
+                                <div class="catagory world"><a href="#">World</a></div>
+                            </div>
+                            <div class="post-content">                              
+                                <div class="entry-meta">
+                                    <ul class="list-inline">
+                                        <li class="publish-date"><i class="fa fa-clock-o"></i><a href="#"> Nov 1, 2015 </a></li>
+                                        <li class="views"><i class="fa fa-eye"></i><a href="#">15k</a></li>
+                                        <li class="loves"><i class="fa fa-heart-o"></i><a href="#">278</a></li>
+                                        <li class="comments"><i class="fa fa-comment-o"></i><a href="#">189</a></li>
+                                    </ul>
+                                </div>
+                                <h2 class="entry-title">
+                                    <a href="news-details.html">The Force Awakens doubles previous Christmas Day record with $49.3 million box office</a>
+                                </h2>
+                            </div>
+                        </div><!--/post--> 
+                        <div class="post feature-post">
+                            <div class="entry-header">
+                                <div class="entry-thumbnail">
+                                    <img class="img-responsive" src="images/post/slider/14.jpg" alt="" />
+                                </div>
+                                <div class="catagory sports"><a href="#">Sports</a></div>
+                            </div>
+                            <div class="post-content">                              
+                                <div class="entry-meta">
+                                    <ul class="list-inline">
+                                        <li class="publish-date"><i class="fa fa-clock-o"></i><a href="#"> Nov 1, 2015 </a></li>
+                                        <li class="views"><i class="fa fa-eye"></i><a href="#">15k</a></li>
+                                        <li class="loves"><i class="fa fa-heart-o"></i><a href="#">278</a></li>
+                                        <li class="comments"><i class="fa fa-comment-o"></i><a href="#">189</a></li>
+                                    </ul>
+                                </div>
+                                <h2 class="entry-title">
+                                    <a href="news-details.html">Bran Stark is all grown up in new 'Game of Thrones' Season 6 photo</a>
+                                </h2>
+                            </div>
+                        </div><!--/post--> 
+                        <div class="post feature-post">
+                            <div class="entry-header">
+                                <div class="entry-thumbnail">
+                                    <img class="img-responsive" src="images/post/slider/10.jpg" alt="" />
+                                </div>
+                                <div class="catagory entertainment"><a href="#">Entertainment</a></div>
+                            </div>
+                            <div class="post-content">                              
+                                <div class="entry-meta">
+                                    <ul class="list-inline">
+                                        <li class="publish-date"><i class="fa fa-clock-o"></i><a href="#"> Nov 1, 2015 </a></li>
+                                        <li class="views"><i class="fa fa-eye"></i><a href="#">15k</a></li>
+                                        <li class="loves"><i class="fa fa-heart-o"></i><a href="#">278</a></li>
+                                        <li class="comments"><i class="fa fa-comment-o"></i><a href="#">189</a></li>
+                                    </ul>
+                                </div>
+                                <h2 class="entry-title">
+                                    <a href="news-details.html">Watch directors Quentin Tarantino and Paul Thomas Anderson geek out over 70mm film</a>
+                                </h2>
+                            </div>
+                        </div><!--/post--> 
+                        <div class="post feature-post">
+                            <div class="entry-header">
+                                <div class="entry-thumbnail">
+                                    <img class="img-responsive" src="images/post/slider/11.jpg" alt="" />
+                                </div>
+                                <div class="catagory world"><a href="#">World</a></div>
+                            </div>
+                            <div class="post-content">                              
+                                <div class="entry-meta">
+                                    <ul class="list-inline">
+                                        <li class="publish-date"><i class="fa fa-clock-o"></i><a href="#"> Nov 1, 2015 </a></li>
+                                        <li class="views"><i class="fa fa-eye"></i><a href="#">15k</a></li>
+                                        <li class="loves"><i class="fa fa-heart-o"></i><a href="#">278</a></li>
+                                        <li class="comments"><i class="fa fa-comment-o"></i><a href="#">189</a></li>
+                                    </ul>
+                                </div>
+                                <h2 class="entry-title">
+                                    <a href="news-details.html">'Affluenza' teen arrested in Mexican resort after weeks on the run</a>
+                                </h2>
+                            </div>
+                        </div><!--/post--> 
+                        <div class="post feature-post">
+                            <div class="entry-header">
+                                <div class="entry-thumbnail">
+                                    <img class="img-responsive" src="images/post/slider/8.jpg" alt="" />
+                                </div>
+                                <div class="catagory sports"><a href="#">Sports</a></div>
+                            </div>
+                            <div class="post-content">                              
+                                <div class="entry-meta">
+                                    <ul class="list-inline">
+                                        <li class="publish-date"><i class="fa fa-clock-o"></i><a href="#"> Nov 1, 2015 </a></li>
+                                        <li class="views"><i class="fa fa-eye"></i><a href="#">15k</a></li>
+                                        <li class="loves"><i class="fa fa-heart-o"></i><a href="#">278</a></li>
+                                        <li class="comments"><i class="fa fa-comment-o"></i><a href="#">189</a></li>
+                                    </ul>
+                                </div>
+                                <h2 class="entry-title">
+                                    <a href="news-details.html">Peyton Manning deserved a better ending -- if he's telling the truth</a>
+                                </h2>
+                            </div>
+                        </div><!--/post--> 
+                        <div class="post feature-post">
+                            <div class="entry-header">
+                                <div class="entry-thumbnail">
+                                    <img class="img-responsive" src="images/post/slider/9.jpg" alt="" />
+                                </div>
+                                <div class="catagory entertainment"><a href="#">Entertainment</a></div>
+                            </div>
+                            <div class="post-content">                              
+                                <div class="entry-meta">
+                                    <ul class="list-inline">
+                                        <li class="publish-date"><i class="fa fa-clock-o"></i><a href="#"> Nov 1, 2015 </a></li>
+                                        <li class="views"><i class="fa fa-eye"></i><a href="#">15k</a></li>
+                                        <li class="loves"><i class="fa fa-heart-o"></i><a href="#">278</a></li>
+                                        <li class="comments"><i class="fa fa-comment-o"></i><a href="#">189</a></li>
+                                    </ul>
+                                </div>
+                                <h2 class="entry-title">
+                                    <a href="news-details.html">44 books on 44 presidents: Welcome, folks, to the Adams administration</a>
+                                </h2>
+                            </div>
+                        </div><!--/post--> 
                     </div>
-                    <!-- /#blog-homepage -->
+                </div>
+                <div class="col-sm-4">
+                    <div class="post feature-post">
+                        <div class="entry-header">
+                            <div class="entry-thumbnail">
+                                <img class="img-responsive" src="images/post/slider/2.jpg" alt="" />
+                            </div>
+                            <div class="catagory health"><span><a href="#">Health</a></span></div>
+                        </div>
+                        <div class="post-content">                              
+                            <div class="entry-meta">
+                                <ul class="list-inline">
+                                    <li class="publish-date"><i class="fa fa-clock-o"></i><a href="#"> Nov 7, 2015 </a></li>
+                                    <li class="views"><i class="fa fa-eye"></i><a href="#">15k</a></li>
+                                    <li class="loves"><i class="fa fa-heart-o"></i><a href="#">278</a></li>
+                                </ul>
+                            </div>
+                            <h2 class="entry-title">
+                                <a href="news-details.html">Manhunt intensifies for fugitive in Kentucky, Tennessee</a>
+                            </h2>
+                        </div>
+                    </div><!--/post--> 
                 </div>
             </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="post feature-post">
+                        <div class="entry-header">
+                            <div class="entry-thumbnail">
+                                <img class="img-responsive" src="images/post/slider/3.jpg" alt="" />
+                            </div>
+                            <div class="catagory technology"><span><a href="#">Technology</a></span></div>
+                        </div>
+                        <div class="post-content">                              
+                            <div class="entry-meta">
+                                <ul class="list-inline">
+                                    <li class="publish-date"><i class="fa fa-clock-o"></i><a href="#"> Nov 2, 2015 </a></li>
+                                    <li class="views"><i class="fa fa-eye"></i><a href="#">15k</a></li>
+                                    <li class="loves"><i class="fa fa-heart-o"></i><a href="#">278</a></li>
+                                </ul>
+                            </div>
+                            <h2 class="entry-title">
+                                <a href="news-details.html">Japan in four gorgeous Pokémon-themed colors</a>
+                            </h2>
+                        </div>
+                    </div><!--/post-->  
+                </div>
+                <div class="col-sm-4">
+                    <div class="post feature-post">
+                        <div class="entry-header">
+                            <div class="entry-thumbnail">
+                                <img class="img-responsive" src="images/post/slider/5.jpg" alt="" />
+                            </div>
+                            <div class="catagory entertainment"><a href="#">Entertainment</a></div>
+                        </div>
+                        <div class="post-content">                              
+                            <div class="entry-meta">
+                                <ul class="list-inline">
+                                    <li class="publish-date"><i class="fa fa-clock-o"></i><a href="#"> Nov 3, 2015 </a></li>
+                                    <li class="views"><i class="fa fa-eye"></i><a href="#">15k</a></li>
+                                    <li class="loves"><i class="fa fa-heart-o"></i><a href="#">278</a></li>
+                                </ul>
+                            </div>
+                            <h2 class="entry-title">
+                                <a href="news-details.html">We finally found out how BB-8 really works</a>
+                            </h2>
+                        </div>
+                    </div><!--/post--> 
+                </div>
+                <div class="col-sm-4">
+                    <div class="post feature-post">
+                        <div class="entry-header">
+                            <div class="entry-thumbnail">
+                                <img class="img-responsive" src="images/post/slider/6.jpg" alt="" />
+                            </div>
+                            <div class="catagory politics"><span><a href="#">Politics</a></span></div>
+                        </div>
+                        <div class="post-content">                              
+                            <div class="entry-meta">
+                                <ul class="list-inline">
+                                    <li class="publish-date"><i class="fa fa-clock-o"></i><a href="#"> Nov 5, 2015 </a></li>
+                                    <li class="views"><i class="fa fa-eye"></i><a href="#">15k</a></li>
+                                    <li class="loves"><i class="fa fa-heart-o"></i><a href="#">278</a></li>
+                                </ul>
+                            </div>
+                            <h2 class="entry-title">
+                                <a href="news-details.html">And the most streamed Beatles song on Spotify is..</a>
+                            </h2>
+                        </div>
+                    </div><!--/post--> 
+                </div>
             </div>
-            <!-- /.container -->
+        </div><!--/#content--> 
 
-            <!-- *** BLOG HOMEPAGE END *** -->
+        <div class="col-md-3 visible-md visible-lg">
+            <div class="add featured-add">
+                <a href="#"><img class="img-responsive" src="images/post/add/add1.jpg" alt="" /></a>
+            </div>
+        </div><!--/#add--> 
+    </div>
+</div><!--/.section--> 
+<div class="section add inner-add">
+    <a href="#"><img class="img-responsive" src="images/post/add/add2.jpg" alt="" /></a>
+</div><!--/.section-->
+<div class="section">               
+    <div class="latest-news-wrapper">
+        <h1 class="section-title"><span>Latest News</span></h1> 
+        <div id="latest-news">
+            <div class="post medium-post">
+                <div class="entry-header">
+                    <div class="entry-thumbnail">
+                        <img class="img-responsive" src="/images/post/1.jpg" alt="" />
+                    </div>
+                    <div class="catagory politics"><span><a href="#">Politics</a></span></div>
+                </div>
+                <div class="post-content">                              
+                    <div class="entry-meta">
+                        <ul class="list-inline">
+                            <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 5, 2015 </a></li>
+                            <li class="views"><a href="#"><i class="fa fa-eye"></i>15k</a></li>
+                            <li class="loves"><a href="#"><i class="fa fa-heart-o"></i>278</a></li>
+                        </ul>
+                    </div>
+                    <h2 class="entry-title">
+                        <a href="news-details.html">Our closest relatives aren't fans of daylight saving time</a>
+                    </h2>
+                </div>
+            </div><!--/post--> 
+            <div class="post medium-post">
+                <div class="entry-header">
+                    <div class="entry-thumbnail">
+                        <img class="img-responsive" src="/images/post/2.jpg" alt="" />
+                    </div>
+                    <div class="catagory world"><a href="#">World</a></div>
+                </div>
+                <div class="post-content">                              
+                    <div class="entry-meta">
+                        <ul class="list-inline">
+                            <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 5, 2015 </a></li>
+                            <li class="views"><a href="#"><i class="fa fa-eye"></i>15k</a></li>
+                            <li class="loves"><a href="#"><i class="fa fa-heart-o"></i>278</a></li>
+                        </ul>
+                    </div>
+                    <h2 class="entry-title">
+                        <a href="news-details.html">44 books on 44 presidents: Welcome, folks, to the Adams</a>
+                    </h2>
+                </div>
+            </div><!--/post--> 
+            <div class="post medium-post">
+                <div class="entry-header">
+                    <div class="entry-thumbnail">
+                        <img class="img-responsive" src="images/post/4.jpg" alt="" />
+                    </div>
+                    <div class="catagory health"><span><a href="#">Health</a></span></div>
+                </div>
+                <div class="post-content">                              
+                    <div class="entry-meta">
+                        <ul class="list-inline">
+                            <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 5, 2015 </a></li>
+                            <li class="views"><a href="#"><i class="fa fa-eye"></i>15k</a></li>
+                            <li class="loves"><a href="#"><i class="fa fa-heart-o"></i>278</a></li>
+                        </ul>
+                    </div>
+                    <h2 class="entry-title">
+                        <a href="news-details.html">And the most streamed Beatles song on Spotify is...</a>
+                    </h2>
+                </div>
+            </div><!--/post--> 
 
+            <div class="post medium-post">
+                <div class="entry-header">
+                    <div class="entry-thumbnail">
+                        <img class="img-responsive" src="/images/post/3.jpg" alt="" />
+                    </div>
+                    <div class="catagory sports"><span><a href="#">Sports</a></span></div>
+                </div>
+                <div class="post-content">                              
+                    <div class="entry-meta">
+                        <ul class="list-inline">
+                            <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 5, 2015 </a></li>
+                            <li class="views"><a href="#"><i class="fa fa-eye"></i>15k</a></li>
+                            <li class="loves"><a href="#"><i class="fa fa-heart-o"></i>278</a></li>
+                        </ul>
+                    </div>
+                    <h2 class="entry-title">
+                        <a href="news-details.html">NBA suspends Matt Barnes for attack on Derek Fisher</a>
+                    </h2>
+                </div>
+            </div><!--/post--> 
 
+            <div class="post medium-post">
+                <div class="entry-header">
+                    <div class="entry-thumbnail">
+                        <img class="img-responsive" src="images/post/5.jpg" alt="" />
+                    </div>
+                    <div class="catagory politics"><span><a href="#">Politics</a></span></div>
+                </div>
+                <div class="post-content">                              
+                    <div class="entry-meta">
+                        <ul class="list-inline">
+                            <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 5, 2015 </a></li>
+                            <li class="views"><a href="#"><i class="fa fa-eye"></i>15k</a></li>
+                            <li class="loves"><a href="#"><i class="fa fa-heart-o"></i>278</a></li>
+                        </ul>
+                    </div>
+                    <h2 class="entry-title">
+                        <a href="news-details.html">At Facebook who suggests tags for all of your photos</a>
+                    </h2>
+                </div>
+            </div><!--/post--> 
+
+            <div class="post medium-post">
+                <div class="entry-header">
+                    <div class="entry-thumbnail">
+                        <img class="img-responsive" src="images/post/6.jpg" alt="" />
+                    </div>
+                    <div class="catagory entertainment"><span><a href="#">Entertainment</a></span></div>
+                </div>
+                <div class="post-content">                              
+                    <div class="entry-meta">
+                        <ul class="list-inline">
+                            <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 5, 2015 </a></li>
+                            <li class="views"><a href="#"><i class="fa fa-eye"></i>15k</a></li>
+                            <li class="loves"><a href="#"><i class="fa fa-heart-o"></i>278</a></li>
+                        </ul>
+                    </div>
+                    <h2 class="entry-title">
+                        <a href="news-details.html">Suspicion of plotting New Year's Eve attacks in Belgium</a>
+                    </h2>
+                </div>
+            </div><!--/post--> 
+            <div class="post medium-post">
+                <div class="entry-header">
+                    <div class="entry-thumbnail">
+                        <img class="img-responsive" src="images/post/9.jpg" alt="" />
+                    </div>
+                    <div class="catagory sports"><span><a href="#">Sports</a></span></div>
+                </div>
+                <div class="post-content">                              
+                    <div class="entry-meta">
+                        <ul class="list-inline">
+                            <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 5, 2015 </a></li>
+                            <li class="views"><a href="#"><i class="fa fa-eye"></i>15k</a></li>
+                            <li class="loves"><a href="#"><i class="fa fa-heart-o"></i>278</a></li>
+                        </ul>
+                    </div>
+                    <h2 class="entry-title">
+                        <a href="news-details.html">Someone has calculated the total cost of saving Matt</a>
+                    </h2>
+                </div>
+            </div><!--/post--> 
+
+            <div class="post medium-post">
+                <div class="entry-header">
+                    <div class="entry-thumbnail">
+                        <img class="img-responsive" src="images/post/8.jpg" alt="" />
+                    </div>
+                    <div class="catagory politics"><span><a href="#">Politics</a></span></div>
+                </div>
+                <div class="post-content">                              
+                    <div class="entry-meta">
+                        <ul class="list-inline">
+                            <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 5, 2015 </a></li>
+                            <li class="views"><a href="#"><i class="fa fa-eye"></i>15k</a></li>
+                            <li class="loves"><a href="#"><i class="fa fa-heart-o"></i>278</a></li>
+                        </ul>
+                    </div>
+                    <h2 class="entry-title">
+                        <a href="news-details.html">Homemade lightsaber made with laser can cut wires</a>
+                    </h2>
+                </div>
+            </div><!--/post--> 
+
+            <div class="post medium-post">
+                <div class="entry-header">
+                    <div class="entry-thumbnail">
+                        <img class="img-responsive" src="images/post/10.jpg" alt="" />
+                    </div>
+                    <div class="catagory entertainment"><span><a href="#">Entertainment</a></span></div>
+                </div>
+                <div class="post-content">                              
+                    <div class="entry-meta">
+                        <ul class="list-inline">
+                            <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 5, 2015 </a></li>
+                            <li class="views"><a href="#"><i class="fa fa-eye"></i>15k</a></li>
+                            <li class="loves"><a href="#"><i class="fa fa-heart-o"></i>278</a></li>
+                        </ul>
+                    </div>
+                    <h2 class="entry-title">
+                        <a href="news-details.html">Our closest relatives aren't fans of daylight saving time</a>
+                    </h2>
+                </div>
+            </div><!--/post--> 
         </div>
-        <!-- /#content -->
-
-        @endsection
+    </div><!--/.latest-news-wrapper-->
+</div><!--/.section-->
+<div id="twitter-feed">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <div class="twitter-feeds">
+                    <div class="twitter-feed">
+                        <img class="img-responsive" src="images/others/twitter.png" alt="" />
+                        <h2>#Newspress</h2>
+                        <p>Confusing <a href="#">#design</a> terms: what's the difference between quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a href="#">#UX, #UI and #IA? http://buff.ly/1KdjpEi  </a> </p>
+                    </div>
+                    <div class="twitter-feed">
+                        <img class="img-responsive" src="images/others/twitter.png" alt="" />
+                        <h2>#ThemeRegion</h2>
+                        <p>Confusing <a href="#">#design</a> terms: what's the difference between quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a href="#">#UX, #UI and #IA? http://buff.ly/1KdjpEi  </a> </p>
+                    </div>
+                    <div class="twitter-feed">
+                        <img class="img-responsive" src="images/others/twitter.png" alt="" />
+                        <h2>#Doors</h2>
+                        <p>Confusing <a href="#">#design</a> terms: what's the difference between quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a href="#">#UX, #UI and #IA? http://buff.ly/1KdjpEi  </a> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!--/#twitter-feed-->
+@include('partials.style-chooser')
+@endsection
