@@ -4,7 +4,7 @@
 
 
 @section('content')
-@include('partials.breaking-news')
+
 <div class="section">
     <div class="row">
         <div class="site-content col-md-9">

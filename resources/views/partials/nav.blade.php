@@ -9,14 +9,12 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            
-                            <a class="navbar-brand" href="index.html">
-                                <img class="main-logo img-responsive" src="images/presets/preset1/logo.png" alt="logo">
-                            </a>
                         </div> 
-                        <div class="navbar-right">
-                            <a href="#"><img class="img-responsive" src="images/post/google-add.jpg" alt="" /></a>
-                        </div>
+
+                        <h1 class="top-heading">Yunhouse</h1>
+                        <h6 class="top-sub-heading">Assorted London Tales About The Africa</h6>
+                        <h4 class="top-author">A Novel by Ad'Obe Obe</h4>
+ 
                     </div>
                 </div> 
                 <div id="menubar">
