@@ -89,7 +89,7 @@
       </div>
       <div class="footer-bottom">
         <div class="container text-center">
-          <p><a href="#">NewsPress </a>&copy; 2015 </p>
+          <p><a href="#">Yunhouse </a>&copy; 2017 </p>
         </div>
       </div>    
     </footer>

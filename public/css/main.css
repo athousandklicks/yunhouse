@@ -95,6 +95,17 @@ h1, h2, h3, h4, h5, h6 {
 	padding:90px 0;
 }
 
+.container {
+
+}
+
+.section {
+background-color: #edf2f5;
+padding-left: 10px;
+padding-right: 10px;
+margin-bottom: 15px;
+}
+
 .section {
 	margin-bottom:30px;
 }
@@ -106,7 +117,18 @@ h1, h2, h3, h4, h5, h6 {
 	position:relative;
 	font-size:24px;
 	text-transform:capitalize;
-	color:#525b6e;
+	color:#ffffff;
+	font-weight:600;
+}
+
+.section-title-login {
+	margin-top: 5px;
+	margin-bottom: 20px;
+	padding-bottom: 0;
+	position:relative;
+	font-size:24px;
+	text-transform:capitalize;
+	color:#ffffff;
 	font-weight:600;
 }
 
@@ -821,9 +843,7 @@ img.mfp-img {
 ========= Main Content==========
 ================================*/
 
-.feature-post {
-	position:relative;
-}
+
 
 .feature-post .post-content {
 	position:absolute;
@@ -832,20 +852,33 @@ img.mfp-img {
 	padding:25px 35px;
 	z-index:1;
 	color:#fff;
-	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE4JSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjEzIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjM2JSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjMzIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjcwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjc0Ii8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg3JSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjkxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-	background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.13) 18%, rgba(0,0,0,0.33) 36%, rgba(0,0,0,0.74) 70%, rgba(0,0,0,0.91) 87%, rgba(0,0,0,1) 100%);
-	background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.13) 18%,rgba(0,0,0,0.33) 36%,rgba(0,0,0,0.74) 70%,rgba(0,0,0,0.91) 87%,rgba(0,0,0,1) 100%);
-	background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.13) 18%,rgba(0,0,0,0.33) 36%,rgba(0,0,0,0.74) 70%,rgba(0,0,0,0.91) 87%,rgba(0,0,0,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
 	border-radius: 0 0 3px 3px;
 	width:100%;
 }
 
-.feature-post .entry-title a, 
+.feature-post {
+	position:relative;
+}
+
 .feature-post .entry-meta a, 
 .feature-post .entry-title a:hover, 
 .feature-post .entry-meta a:hover{
 	color:#fff;
+}
+
+.feature-post .entry-title {
+color:#fff;
+letter-spacing: 1.5px;
+line-height: 25px;
+font-weight: 100
+}
+
+.feature-post .entry-title a{
+color:#fff;
+letter-spacing: 1.5px;
+line-height: 25px;
+font-weight: 100
+
 }
 
 .entry-meta {
@@ -952,7 +985,13 @@ img.mfp-img {
 }
 
 .catagory.health a {
-	background-color: #92278f;
+	background-color: #051646;
+	float: right;
+}
+
+.catagory.health {
+	width: 200px;
+float: right;
 }
 
 .catagory.entertainment a {
@@ -1036,7 +1075,6 @@ img.mfp-img {
 	position:absolute;
 	right:0;
 	top:-15px;
-	content:"Advertisement";
 	font-size:10px;
 	color:#a5a5a5;
 }
@@ -1078,6 +1116,11 @@ img.mfp-img {
 	text-transform:initial;
 	font-size:16px;
 	line-height:1.3;
+}
+
+.entry-title, .entry-meta {
+	color:#000;
+	line-height: 25px;
 }
 
 .entry-title a, .entry-meta a {
@@ -2225,6 +2268,10 @@ img.mfp-img {
 }
 
 #main-wrapper {
+		background-image: url("/images/frontend/bg.png");
+	background-repeat-y: no-repeat;
+	background-size:contain; 
+	background-repeat-x: no-repeat;
 	background-color: #f2f3f5;
 	border-left:1px solid #e4e4e4;
 	border-right:1px solid #e4e4e4;
@@ -2799,10 +2846,10 @@ img.mfp-img {
 /* sign-up / login page */
 
 .ragister-account {
-	margin-top:125px;
-	margin-bottom:80px;
-	padding:60px 45px;
-	background-color:#fff;
+	margin-top:15px;
+	margin-bottom:8px;
+	padding:20px 20px;
+	background-color:#0f172c;
 }
 
 .ragister-account .section-title {
@@ -2840,13 +2887,22 @@ img.mfp-img {
 	color:#999;
 }
 
-.facebook-login, .twitter-login {
+.facebook-login {
+	display:inline-block;
+	padding:15px;
+	color:#fff;
+	margin-bottom:5px;
+	font-size:18px;
+	width:100%;
+}
+
+.twitter-login {
 	display:inline-block;
 	padding:15px;
 	color:#fff;
 	margin-bottom:35px;
 	font-size:18px;
-	width:49%;
+	width:100%;
 }
 
 .facebook-login{
