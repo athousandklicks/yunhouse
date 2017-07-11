@@ -191,7 +191,7 @@
                                 <!-- checkbox -->
                                 <div class="checkbox">
                                     <label class="pull-left"><input type="checkbox" name="signing" id="signing"> Keep Me Login </label>
-                                    <a href="#" class="pull-right ">Forgot Password </a> 
+                                    <label class="pull-left"><a href="#" class="pull-right ">Forgot Password </a> </label>
                                 </div><!-- checkbox --> 
                                 <div class="submit-button text-center">
                                     <button type="submit" class="btn btn-primary">Account Login</button>
@@ -203,19 +203,20 @@
                             
                         </div>
                     </div><!--/post--> 
-
-                </div><!--/#widget-->
-
-                <div class="widget follow-us">
+                     <div class="widget follow-us">
                     <h1 class="section-title title">Follow Yunhouse</h1>
                     <ul class="list-inline social-icons">
                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                         <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+       
                         <li><a href="#"><i class="fa fa-youtube"></i></a></li>
                     </ul>
                 </div><!--/#widget-->
+
+                </div><!--/#widget-->
+
+               
 
             </div><!--/#sitebar-->
         </div>
