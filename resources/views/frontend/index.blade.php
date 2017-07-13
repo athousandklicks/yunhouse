@@ -10,14 +10,14 @@
         <div class="col-sm-9">
             <div id="site-content" class="site-content">
                 <div class="row">
-                    <div class="col-sm-7">
+                    <div class="col-sm-6">
                         <div class="left-content">
                             <div class="world-news">
 
                                 <div class="post">
                                     <div class="entry-header">
                                         <div class="entry-thumbnail">
-                                            <img class="img-responsive" src="images/post/w1.jpg" alt="" />
+                                            <img class="img-responsive" src="images/frontend/index-cover.png" alt="" />
                                         </div>
                                     </div>
                                     <div class="post-content">                              
@@ -26,7 +26,7 @@
                                             <a href="news-details.html">Yunhouse in Brief</a>
                                         </h2>
                                         <div class="entry-content">
-                                            <h2 class="entry-title">Text of the printing and typesetting industry orem Ipsum has been the industry standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book ......</h2>
+                                            <h2 class="entry-title">In the year 1884, in the German City of Berlin, representatives of major European nations gathered around a giant map of the continent of Africa  <span class="read-more"><a href="#">...Read More</a></span></h2>
                                         </div>
                                     </div>
 
@@ -35,36 +35,30 @@
                         </div><!--/.left-content-->
                     </div>
 
-                    <div class="col-sm-5">
-                        <div class="middle-content">                                        
-                            <div class="section video-section">
-                                <div class="post video-post medium-post">
+                    <div class="col-sm-6">
+                    <div class="left-content">
+                            <div class="world-news">
+
+                                <div class="post">
                                     <div class="entry-header">
-                                        <div class="entry-thumbnail embed-responsive embed-responsive-16by9">
-                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-WlqrkXImsk" frameborder="0" allowfullscreen></iframe>
+                                        <div class="entry-thumbnail">
+                                            <img class="img-responsive" src="images/frontend/col.png" alt="" />
                                         </div>
                                     </div>
                                     <div class="post-content">                              
-                                        <div class="video-catagory"><a href="#">World</a></div>
-                                        <h2 class="entry-title">
-                                            <a href="news-details.html">Our Closest Relatives Aren't Fans Of Daylight Saving Time</a>
-                                        </h2>
-                                    </div>
-                                </div><!--/post-->
-
-                                <div class="post video-post medium-post">
-
-                                    <div class="post-content">                              
 
                                         <h2 class="entry-title">
-                                            <a href="news-details.html">Our Closest Relatives Aren't Fans Of Daylight Saving Time</a>
-                                            <a href="news-details.html">Our Closest Relatives Aren't Fans Of Daylight Saving Time</a>
+                                            <a href="news-details.html">Dreaming Yunhouse</a>
                                         </h2>
+                                        <div class="entry-content">
+                                            <h2 class="entry-title">I began dreaming of Yunhouse from the moment of my arrival in Europe in the middle of the last century. It was a dream that would afflict my career <span class="read-more"><a href="#">...Read More</a></span></h2>
+                                        </div>
                                     </div>
-                                </div><!--/post-->
 
-                            </div> <!-- /.video-section -->                                     
-                        </div><!--/.middle-content-->
+                                </div><!--/post--> 
+                            </div><!--/.section-->      
+                        </div><!--/.left-content-->
+      
                     </div>
 
                 </div>
@@ -152,23 +146,7 @@
                 <div class="widget">
 
                     <div class="post medium-post">
-                        <div class="entry-header">
-                            <div class="entry-thumbnail">
-                                <img class="img-responsive" src="images/post/2.jpg" alt="" />
-                            </div>
-                        </div>
-                        <div class="post-content">                              
-                            <div class="entry-meta">
-                                <ul class="list-inline">
-                                    <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 15, 2015 </a></li>
-                                    <li class="views"><a href="#"><i class="fa fa-eye"></i>15k</a></li>
-                                    <li class="loves"><a href="#"><i class="fa fa-heart-o"></i>278</a></li>
-                                </ul>
-                            </div>
-                            <h2 class="entry-title">
-                                <a href="news-details.html">Our closest relatives aren't fans of daylight saving time</a>
-                            </h2>
-                        </div>
+                  
 
                         <div class="ragister-account account-login">        
                         <h1 class="section-title title">Enter Palavar Hall</h1>
