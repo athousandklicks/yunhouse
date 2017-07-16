@@ -7,89 +7,19 @@
       <div class="footer-menu">
         <div class="container">
           <ul class="nav navbar-nav">                       
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Career</a></li>
-            <li><a href="#">Advertisement</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="yunhouse-in-brief">YUNHOUSE IN BRIEF</a></li>
+            <li><a href="about-author">ABOUT THE AUTHOR</a></li>
+            <li><a href="#">YUNHOUSE CHARACTERS</a></li>
+            <li><a href="#">INTRO TALES</a></li>
+            <li><a href="palavar">PALAVAR HALL</a></li>
+            <li><a href="#">DOWNLOAD</a></li>
           </ul> 
         </div>
       </div>
-      <div class="bottom-widgets">
-        <div class="container">
-          <div class="col-sm-4">
-            <div class="widget">
-              <h2>Category</h2> 
-              <ul>
-                <li><a href="#">Business</a></li>
-                <li><a href="#">Politics</a></li>
-                <li><a href="#">Sports</a></li>
-                <li><a href="#">World</a></li>
-                <li><a href="#">Technology</a></li>
-              </ul>
-              <ul>
-                <li><a href="#">Environment</a></li>
-                <li><a href="#">Health</a></li>
-                <li><a href="#">Entertainment</a></li>
-                <li><a href="#">Lifestyle</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="widget">
-              <h2>Editions</h2> 
-              <ul>
-                <li><a href="#">United States</a></li>
-                <li><a href="#">China</a></li>
-                <li><a href="#">India</a></li>
-                <li><a href="#">Maxico</a></li>
-                <li><a href="#">Middle East</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="widget">
-              <h2>Tag</h2> 
-              <ul>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Sports</a></li>
-                <li><a href="#">Featured</a></li>
-                <li><a href="#">World</a></li>
-                <li><a href="#">Fashion</a></li>
-              </ul>
-              <ul>
-                <li><a href="#">Environment</a></li>
-                <li><a href="#">Health</a></li>
-                <li><a href="#">Entertainment</a></li>
-                <li><a href="#">Lifestyle</a></li>
-                <li><a href="#">Business</a></li>
-              </ul>
-              <ul>
-                <li><a href="#">Tech</a></li>
-                <li><a href="#">Movie</a></li>
-                <li><a href="#">Music</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="widget">
-              <h2>Products</h2> 
-              <ul>
-                <li><a href="#">Ebook</a></li>
-                <li><a href="#">Baby Product</a></li>
-                <li><a href="#">Magazine</a></li>
-                <li><a href="#">Sports Elements</a></li>              
-                <li><a href="#">Technology</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+
       <div class="footer-bottom">
         <div class="container text-center">
-          <p><a href="#">Yunhouse </a>&copy; 2017 </p>
+          <p><a href="/">Yunhouse </a>&copy; 2017 </p>
         </div>
       </div>    
     </footer>

@@ -20,7 +20,6 @@
 }
 
 .section-title:before, 
-.btn-primary, 
 .badge, 
 .catagory a, 
 .owl-theme .owl-controls .owl-page.active span,
@@ -31,11 +30,28 @@
 .pagination li a:hover, 
 .pagination .active>a, 
 .pagination .active>a:focus, 
-.pagination .active>a:hover, 
-#breaking-news span, 
+.pagination .active>a:hover,  
 .subscribe-me button, 
 .top-user-form .btn:hover {
-	background-color:#ed1c24;
+	background-color:#051646;
+}
+
+#breaking-news span{
+	background-color:#051646;
+	color: #fff;
+}
+
+#breaking-news a{
+	color: #fff;
+}
+
+#breaking-news a:hover{
+	color: #051646;
+}
+
+#breaking-news span:hover{
+	color:#051646;
+	background-color:#ffffff;
 }
 
 .form-control:focus, 

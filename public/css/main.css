@@ -107,7 +107,7 @@ margin-bottom: 15px;
 }
 
 .section {
-	margin-bottom:30px;
+	margin-bottom:20px;
 }
 
 .section-title {
@@ -152,7 +152,7 @@ margin-bottom: 15px;
 } 
 
 .section-title.title {
-	margin-bottom:45px;
+	margin-bottom:20px;
 }
 
 .btn-primary.btn-animated {	
@@ -1054,7 +1054,7 @@ float: right;
 
 .add {	
 	position:relative;
-	margin-top:40px;
+	margin-top:0px;
 }
 
 .google-add, 
@@ -1590,8 +1590,29 @@ float: right;
 
 .follow-us {
 background-color:#6b5e58;
-padding:15px;
+padding-top:15px;
+padding-bottom:15px;
+padding-right:25px;
+padding-left:25px;
 }
+
+.write-review {
+background-color:#14448e;
+padding-top:15px;
+padding-bottom:15px;
+padding-right:25px;
+padding-left:25px;
+}
+
+.write-review:hover {
+background-color:#14448e;
+padding-top:15px;
+padding-bottom:15px;
+padding-right:25px;
+padding-left:25px;
+}
+
+
 
 .widget .post-list .post {
 	border-bottom:0;
@@ -2855,7 +2876,7 @@ padding:15px;
 /* sign-up / login page */
 
 .ragister-account {
-	margin-top:15px;
+	margin-top:px;
 	margin-bottom:8px;
 	padding:20px 20px;
 	background-color:#0f172c;
