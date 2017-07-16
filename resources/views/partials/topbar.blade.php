@@ -3,18 +3,12 @@
                 <div id="date-time"></div>
                 <div id="topbar-right">
                     <div class="dropdown language-dropdown">                        
-                        <a data-toggle="dropdown" href="#"><span class="change-text">En</span> <i class="fa fa-angle-down"></i></a>
-                        <ul class="dropdown-menu language-change">
-                            <li><a href="#">EN</a></li>
-                            <li><a href="#">FR</a></li>
-                            <li><a href="#">GR</a></li>
-                            <li><a href="#">ES</a></li>
-                        </ul>                               
+                                                       
                     </div>              
                     <div id="weather"></div>
                     <div class="searchNlogin">
                         <ul>
-                            <li class="search-icon"><i class="fa fa-search"></i></li>
+                            
                             <li class="dropdown user-panel"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i></a>
                                 <div class="dropdown-menu top-user-section">
                                     <div class="top-user-form">

@@ -218,7 +218,7 @@ jQuery(function ($) {
 
   
 	$.simpleWeather({
-		location: 'london, uk',
+		location: 'abuja, ng',
 		woeid: '',
 		unit: 'c',
 		success: function(weather) {
@@ -231,7 +231,7 @@ jQuery(function ($) {
 	});
 	
 	$.simpleWeather({
-		location: 'london, uk',
+		location: 'abuja, ng',
 		woeid: '',
 		unit: 'c',
 		success: function(weather) {		 

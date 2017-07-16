@@ -264,19 +264,19 @@
                     <div class="col-sm-8 col-sm-offset-2">
                         <div class="twitter-feeds">
                             <div class="twitter-feed">
-                                <img class="img-responsive" src="images/others/twitter.png" alt="" />
-                                <h2>#Newspress</h2>
-                                <p>Confusing <a href="#">#design</a> terms: what's the difference between quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a href="#">#UX, #UI and #IA? http://buff.ly/1KdjpEi  </a> </p>
+                                
+                                
+                                <p>How about a letter to Mother Africa. Tell her how her descendants have evolved, the hatred, the love, the variety of skin colours, the multiplicity of human habits as in cultures and traditions across the globe. Millennia of everything human, the wars, the atrocities, man’s inhumanity to man… Can you imagine Fleet Street reaction if the story had been that the mother of the entire human race was European?</p>
                             </div>
                             <div class="twitter-feed">
-                                <img class="img-responsive" src="images/others/twitter.png" alt="" />
-                                <h2>#ThemeRegion</h2>
-                                <p>Confusing <a href="#">#design</a> terms: what's the difference between quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a href="#">#UX, #UI and #IA? http://buff.ly/1KdjpEi  </a> </p>
+                          
+                                
+                                <p>...regarded by Africans all over the world as their intellectual property since that day a renegade group of Africans legally gained material possession of the building and declared it a Colony of Africa in the year Nineteen Hundred And Fifty-One – Anno Domini.</p>
                             </div>
                             <div class="twitter-feed">
-                                <img class="img-responsive" src="images/others/twitter.png" alt="" />
-                                <h2>#Doors</h2>
-                                <p>Confusing <a href="#">#design</a> terms: what's the difference between quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a href="#">#UX, #UI and #IA? http://buff.ly/1KdjpEi  </a> </p>
+                               
+                                
+                                <p>Picture categorised Africans who fought and won The First Battle For Yunhouse as “Radical Blacks” whose views on Africa would subsequently be fitted with caps of quotation marks before they could sit in its editorial pages, </p>
                             </div>
                         </div>
                     </div>

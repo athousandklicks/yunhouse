@@ -1898,7 +1898,7 @@ padding-left:25px;
 .logo-icon:before, 
 .logo-icon:after {
 	position:absolute;
-	content:"";
+	
 	top:50%;
 	height:1px;
 	width:140px;

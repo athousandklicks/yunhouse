@@ -13,7 +13,7 @@
 
                         <h1 class="top-heading">Yunhouse</h1>
                         <h6 class="top-sub-heading">Assorted London Tales About The Africa</h6>
-                        <h4 class="top-author">A Novel by Ad'Obe Obe</h4>
+                        <h4 class="top-author">Written by Ad'Obe Obe</h4>
  
                     </div>
                 </div> 

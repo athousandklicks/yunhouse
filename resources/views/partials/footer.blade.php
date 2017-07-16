@@ -1,7 +1,7 @@
     <footer id="footer">
       <div class="footer-top">
         <div class="container text-center">
-          <div class="logo-icon"><img class="img-responsive" src="images/presets/preset1/logo-icon.png" alt="" /></div>
+          <div class="logo-icon"><img class="img-responsive" src="images/frontend/logo.png" alt="" /></div>
         </div>
       </div>
       <div class="footer-menu">
