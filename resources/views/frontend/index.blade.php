@@ -2,6 +2,9 @@
 
 @section('title', '| YUNHOUSE: Assorted London Tales about the Africa')
 
+        @include('partials.topbar')
+
+        @include('partials.nav')
 
 @section('content')
 

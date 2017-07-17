@@ -9,9 +9,7 @@
 <body>
 	<div id="main-wrapper" class="homepage-two">
 
-		@include('partials.topbar')
 
-		@include('partials.nav')
 
 		<div class="container">
 			@yield('content')
