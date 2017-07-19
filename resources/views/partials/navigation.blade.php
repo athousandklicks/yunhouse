@@ -109,20 +109,11 @@
 								</li>
 
 								<li class="world dropdown mega-cat-dropdown">
-									<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">World</a>
+									<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Intro Tales</a>
 									<div class="dropdown-menu mega-cat-menu">
 										<div class="container">
 											<div class="sub-catagory">
-												<h2 class="section-title">World</h2>
-												<ul class="list-inline">
-													<li><a href="#">Usa</a></li>
-													<li><a href="#">Asia</a></li>
-													<li><a href="#">Us</a></li>
-													<li><a href="#">Politics</a></li>
-													<li><a href="#">Business</a></li>
-													<li><a href="#">Press</a></li>
-													<li><a href="#">Travel</a></li>
-												</ul>
+												<h2 class="section-title">Intro</h2>
 											</div>
 											<div class="row">
 												<div class="col-sm-3">
@@ -132,215 +123,103 @@
 																<img class="img-responsive" src="images/post/2.jpg" alt="" />
 															</div>
 														</div>
-														<div class="post-content">								
-															<div class="entry-meta">
-																<ul class="list-inline">
-																	<li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 5, 2015 </a></li>
-																	<li class="views"><a href="#"><i class="fa fa-eye"></i>15k</a></li>
-																	<li class="loves"><a href="#"><i class="fa fa-heart-o"></i>278</a></li>
-																</ul>
-															</div>
+														<div class="post-content">
 															<h2 class="entry-title">
-																<a href="news-details.html">Apple may be preparing for new Beats radio stations</a>
-															</h2>
+																The 20th Century Was Drawing To A Close When The Press Release Came: “ALL HUMANS ON PLANET EARTH ARE DESCENDED FROM AN AFRICAN WOMAN”.<span class="read-more"><a href="#">...Read More</a></span></h2>
+															</div>
+														</div><!--/post--> 
+													</div>
+													<div class="col-sm-3">
+														<div class="post medium-post">
+															<div class="entry-header">
+																<div class="entry-thumbnail">
+																	<img class="img-responsive" src="images/post/6.jpg" alt="" />
+																</div>
+															</div>
+															<div class="post-content">
+																<h2 class="entry-title">
+																	The 20th Century Was Drawing To A Close When The Press Release Came: “ALL HUMANS ON PLANET EARTH ARE DESCENDED FROM AN AFRICAN WOMAN”.<span class="read-more"><a href="#">...Read More</a></span></h2>
+																</div>
+															</div><!--/post--> 
 														</div>
-													</div><!--/post--> 
-												</div>
-												<div class="col-sm-3">
-													<div class="post medium-post">
-														<div class="entry-header">
-															<div class="entry-thumbnail">
-																<img class="img-responsive" src="images/post/6.jpg" alt="" />
+														<div class="col-sm-3">
+															<div class="post medium-post">
+																<div class="entry-header">
+																	<div class="entry-thumbnail">
+																		<img class="img-responsive" src="images/post/3.jpg" alt="" />
+																	</div>
+																</div>
+																<div class="post-content">
+																	<h2 class="entry-title">
+																		The 20th Century Was Drawing To A Close When The Press Release Came: “ALL HUMANS ON PLANET EARTH ARE DESCENDED FROM AN AFRICAN WOMAN”.<span class="read-more"><a href="#">...Read More</a></span></h2>
+																	</div>
+																</div><!--/post--> 
+															</div>
+															<div class="col-sm-3">
+																<div class="post medium-post">
+																	<div class="entry-header">
+																		<div class="entry-thumbnail">
+																			<img class="img-responsive" src="images/post/5.jpg" alt="" />
+																		</div>
+																	</div>
+																	<div class="post-content">
+																		<h2 class="entry-title">
+																			The 20th Century Was Drawing To A Close When The Press Release Came: “ALL HUMANS ON PLANET EARTH ARE DESCENDED FROM AN AFRICAN WOMAN”.<span class="read-more"><a href="#">...Read More</a></span></h2>
+																		</div>
+																	</div><!--/post--> 
+																</div>
 															</div>
 														</div>
-														<div class="post-content">								
-															<div class="entry-meta">
-																<ul class="list-inline">
-																	<li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 5, 2015 </a></li>
-																	<li class="views"><a href="#"><i class="fa fa-eye"></i>15k</a></li>
-																	<li class="loves"><a href="#"><i class="fa fa-heart-o"></i>278</a></li>
-																</ul>
+													</div>
+												</li>
+												<li class="environment dropdown mega-dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Palavar Hall</a>
+													<div class="dropdown-menu mega-menu">
+														<div class="container">
+															<div class="row">
+																<div class="col-sm-6">
+																	<h2><b>About Palavar Hall</b></h2>
+																	<h2 class="entry-title"> Ad’Obe Obe has been resident in London since the Easter of 1974. He studied chemical engineering in Germany and philosophy in London. Ad’Obe Obe has been resident in London since the Easter of 1974. He studied chemical engineering in Germany and philosophy in London.<span class="read-more"><a href="#">...Read More</a></span></h2>
+																</div>
+
+																<div class="col-sm-3">
+																	<h2 class="entry-title">Social Login</h1>
+																	<div class="login-options text-center">
+																		<a href="#" class="facebook-login"><i class="fa fa-facebook"></i>Facebook Login</a>
+																		<a href="#" class="twitter-login"><i class="fa fa-twitter"></i>Twitter Login</a>
+
+																	</div>												
+																</div>
+																<div class="col-sm-3">
+<div class="nav-login">
+                                    <div class="top-user-form">
+                                        <form id="top-login" role="form">
+                                            <div class="input-group" id="top-login-username">
+                                                <span class="input-group-addon"><img src="/images/others/user-icon.png" alt="" /></span>
+                                                <input type="text" class="form-control" placeholder="Username" required="">
+                                            </div>
+                                            <div class="input-group" id="top-login-password">
+                                                <span class="input-group-addon"><img src="/images/others/password-icon.png" alt="" /></span>
+                                                <input type="password" class="form-control" placeholder="Password" required="">
+                                            </div>
+                                            <div>
+                                                <p class="reset-user">Forgot <a href="#">Password/Username?</a></p>
+                                                <button class="btn btn-danger" type="submit">Login</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="create-account">
+                                        <a href="#">Create a New Account</a>
+                                    </div>
+                                	</div>
+																</div>
 															</div>
-															<h2 class="entry-title">
-																<a href="news-details.html">Why is the media so afraid of Facebook?</a>
-															</h2>
 														</div>
-													</div><!--/post--> 
-												</div>
-												<div class="col-sm-3">
-													<div class="post medium-post">
-														<div class="entry-header">
-															<div class="entry-thumbnail">
-																<img class="img-responsive" src="images/post/3.jpg" alt="" />
-															</div>
-														</div>
-														<div class="post-content">								
-															<div class="entry-meta">
-																<ul class="list-inline">
-																	<li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 5, 2015 </a></li>
-																	<li class="views"><a href="#"><i class="fa fa-eye"></i>15k</a></li>
-																	<li class="loves"><a href="#"><i class="fa fa-heart-o"></i>278</a></li>
-																</ul>
-															</div>
-															<h2 class="entry-title">
-																<a href="news-details.html">Samsung Pay will support online shopping</a>
-															</h2>
-														</div>
-													</div><!--/post--> 
-												</div>
-												<div class="col-sm-3">
-													<div class="post medium-post">
-														<div class="entry-header">
-															<div class="entry-thumbnail">
-																<img class="img-responsive" src="images/post/5.jpg" alt="" />
-															</div>
-														</div>
-														<div class="post-content">								
-															<div class="entry-meta">
-																<ul class="list-inline">
-																	<li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 5, 2015 </a></li>
-																	<li class="views"><a href="#"><i class="fa fa-eye"></i>15k</a></li>
-																	<li class="loves"><a href="#"><i class="fa fa-heart-o"></i>278</a></li>
-																</ul>
-															</div>
-															<h2 class="entry-title">
-																<a href="news-details.html">The best games for your phone</a>
-															</h2>
-														</div>
-													</div><!--/post--> 
-												</div>
-											</div>
-										</div>
+													</div>
+												</li>
+												<li class="sports"><a href="#">Download</a></li>
+											</ul> 									
+										</nav>					
 									</div>
-								</li>
-								<li class="technology dropdown mega-cat-dropdown">
-									<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Technology</a>
-									<div class="dropdown-menu mega-cat-menu">
-										<div class="container">
-											<div class="sub-catagory">
-												<h2 class="section-title">Technology</h2>
-												<ul class="list-inline">
-													<li><a href="#">Apps</a></li>
-													<li><a href="#">Gear</a></li>
-													<li><a href="#">Watch</a></li>
-													<li><a href="#">Tech</a></li>
-													<li><a href="#">Laptop</a></li>
-													<li><a href="#">Mobile</a></li>
-													<li><a href="#">3D Games</a></li>
-												</ul>
-											</div>
-											<div class="row">
-												<div class="col-sm-3">
-													<div class="post medium-post">
-														<div class="entry-header">
-															<div class="entry-thumbnail">
-																<img class="img-responsive" src="images/post/technology/6.jpg" alt="" />
-															</div>
-														</div>
-														<div class="post-content">								
-															<div class="entry-meta">
-																<ul class="list-inline">
-																	<li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 5, 2015 </a></li>
-																	<li class="views"><a href="#"><i class="fa fa-eye"></i>15k</a></li>
-																	<li class="loves"><a href="#"><i class="fa fa-heart-o"></i>278</a></li>
-																</ul>
-															</div>
-															<h2 class="entry-title">
-																<a href="news-details.html">Apple may be preparing for new Beats radio stations</a>
-															</h2>
-														</div>
-													</div><!--/post--> 
-												</div>
-												<div class="col-sm-3">
-													<div class="post medium-post">
-														<div class="entry-header">
-															<div class="entry-thumbnail">
-																<img class="img-responsive" src="images/post/technology/5.jpg" alt="" />
-															</div>
-														</div>
-														<div class="post-content">								
-															<div class="entry-meta">
-																<ul class="list-inline">
-																	<li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 5, 2015 </a></li>
-																	<li class="views"><a href="#"><i class="fa fa-eye"></i>15k</a></li>
-																	<li class="loves"><a href="#"><i class="fa fa-heart-o"></i>278</a></li>
-																</ul>
-															</div>
-															<h2 class="entry-title">
-																<a href="news-details.html">Why is the media so afraid of Facebook?</a>
-															</h2>
-														</div>
-													</div><!--/post--> 
-												</div>
-												<div class="col-sm-3">
-													<div class="post medium-post">
-														<div class="entry-header">
-															<div class="entry-thumbnail">
-																<img class="img-responsive" src="images/post/technology/4.jpg" alt="" />
-															</div>
-														</div>
-														<div class="post-content">								
-															<div class="entry-meta">
-																<ul class="list-inline">
-																	<li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 5, 2015 </a></li>
-																	<li class="views"><a href="#"><i class="fa fa-eye"></i>15k</a></li>
-																	<li class="loves"><a href="#"><i class="fa fa-heart-o"></i>278</a></li>
-																</ul>
-															</div>
-															<h2 class="entry-title">
-																<a href="news-details.html">Samsung Pay will support online shopping</a>
-															</h2>
-														</div>
-													</div><!--/post--> 
-												</div>
-												<div class="col-sm-3">
-													<div class="post medium-post">
-														<div class="entry-header">
-															<div class="entry-thumbnail">
-																<img class="img-responsive" src="images/post/technology/3.jpg" alt="" />
-															</div>
-														</div>
-														<div class="post-content">								
-															<div class="entry-meta">
-																<ul class="list-inline">
-																	<li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 5, 2015 </a></li>
-																	<li class="views"><a href="#"><i class="fa fa-eye"></i>15k</a></li>
-																	<li class="loves"><a href="#"><i class="fa fa-heart-o"></i>278</a></li>
-																</ul>
-															</div>
-															<h2 class="entry-title">
-																<a href="news-details.html">The best games for your phone</a>
-															</h2>
-														</div>
-													</div><!--/post--> 
-												</div>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li class="sports"><a href="listing-sports.html">Sports</a></li>
-								<li class="health"><a href="listing.html">Health</a></li>
-								<li class="entertainment"><a href="listing.html">Entertainment</a></li>
-								<li class="lifestyle"><a href="listing-life-style.html">Lifestyle</a></li>
-								<li class="more dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Pages +</a>
-									<ul class="dropdown-menu">
-										<li><a href="news-details.html">News Details</a></li>
-										<li><a href="listing.html">Category Listing</a></li>
-										<li><a href="listing-life-style.html">Category Lifestyle</a></li>
-										<li><a href="listing-sports.html">Category Sports</a></li>
-										<li><a href="404.html">404 Error</a></li>
-										<li><a href="author-listing.html">Author Listing <span class="badge">New</span></a></li>
-										<li><a href="author-details.html">Author Details <span class="badge">New</span></a></li>
-										<li><a href="about-us.html">About Us <span class="badge">New</span></a></li>
-										<li><a href="contact-us.html">Contact Us <span class="badge">New</span></a></li>
-										<li><a href="contact-us2.html">Contact Us Two <span class="badge">New</span></a></li>
-										<li><a href="signup.html">Sign Up Page<span class="badge">New</span></a></li>
-										<li><a href="signin.html">Sign In page<span class="badge">New</span></a></li>
-									</ul>
-								</li>
-							</ul> 									
-						</nav>					
-					</div>
-				</div><!--/#navigation--> 
-			</div><!--/#navigation--> 
-		</div><!--/#navigation--> 
+								</div><!--/#navigation--> 
+							</div><!--/#navigation--> 
+						</div><!--/#navigation--> 

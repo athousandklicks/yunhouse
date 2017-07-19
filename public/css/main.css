@@ -51,7 +51,7 @@ ul {
 }
 
 a {
-	color: #aeaeae;
+	color: #e5ecf1;
 	text-decoration: none;
 	-webkit-transition: 300ms;
 	-moz-transition: 300ms;
@@ -710,6 +710,11 @@ img.mfp-img {
 	border-bottom: 5px solid #3a3a3a;
 	top: -5px;
 	right: 1px;
+}
+
+.nav-login{
+	padding: 0;
+	background-color: #3a3a3a;
 }
 
 .top-user-section a {
@@ -2879,7 +2884,7 @@ padding-left:25px;
 	margin-top:px;
 	margin-bottom:8px;
 	padding:20px 20px;
-	background-color:#0f172c;
+	background-color:#226894;
 }
 
 .ragister-account .section-title {
@@ -2901,7 +2906,7 @@ padding-left:25px;
 }
 
 .ragister-account label {
-	color:#999;
+	color:#fff;
 }
 
 .ragister-account .btn-primary {
