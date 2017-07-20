@@ -32,3 +32,18 @@ Route::get('yunhouse-in-brief', 'staticPagesController@getYunhouseInBrief');
 				Route::get('ogesayi', 'characterController@getOgesayi');
 				Route::get('palavar', 'characterController@getPalavar');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+/*
+|--------------------------------------------------------------------------
+| Facebook Login Routes
+|--------------------------------------------------------------------------
+
+*/
+Route::get('auth/facebook', 'Auth\RegisterController@redirectToProvider');
+Route::get('auth/facebook/callback', 'Auth\RegisterController@handleProviderCallback');
