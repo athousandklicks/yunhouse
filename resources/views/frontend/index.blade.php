@@ -150,7 +150,8 @@
                                         <h1 class="section-title title">Enter Palavar Hall</h1>
                                         <div class="login-options text-center">
                                             <a href="/auth/facebook" class="facebook-login"><i class="fa fa-facebook"></i>Facebook Login</a>
-                                            <a href="#" class="twitter-login"><i class="fa fa-twitter"></i>Twitter Login</a>
+                                            <a href="/auth/twitter" class="twitter-login"><i class="fa fa-twitter"></i>Twitter Login</a>
+                                            <a href="/auth/google" class="google-login"><i class="fa fa-google-plus"></i>Google Login</a>
 
                                         </div>
                                         <div class="devider text-center">Or</div>

@@ -2935,7 +2935,16 @@ padding-left:25px;
 	display:inline-block;
 	padding:15px;
 	color:#fff;
-	margin-bottom:35px;
+	margin-bottom:5px;
+	font-size:18px;
+	width:100%;
+}
+
+.google-login {
+	display:inline-block;
+	padding:15px;
+	color:#fff;
+	margin-bottom:5px;
 	font-size:18px;
 	width:100%;
 }
@@ -2948,7 +2957,12 @@ padding-left:25px;
 	background-color:#27C4FE;
 }
 
+.google-login {
+	background-color:#da2713;
+}
+
 .ragister-account .facebook-login:hover, 
+.ragister-account .google-login:hover,
 .ragister-account .twitter-login:hover {
 	color:#fff;
 }
@@ -2959,6 +2973,10 @@ padding-left:25px;
 
 .twitter-login:hover {
 	background-color:#10AEE8;
+}
+
+.google-login:hover {
+	background-color:#9c1304;
 }
 
 .login-options {

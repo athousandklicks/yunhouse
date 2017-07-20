@@ -6,6 +6,7 @@ use App\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use App\SocialProvider;
 use Socialite;
 
 class RegisterController extends Controller
@@ -72,47 +73,47 @@ class RegisterController extends Controller
 
 
   /**
-    FACEBOOK LOGIN FUNCTIONS
-     * Redirect the user to the Facebook authentication page.
+     * Social login implementation
      *
      * @return Response
      */
-
-
-     public function redirectToProvider()
+    public function redirectToProvider($provider)
     {
-        return Socialite::driver('facebook')->redirect();
+        return Socialite::driver($provider)->redirect();
     }
-
     /**
      * Obtain the user information from GitHub.
      *
      * @return Response
      */
-    public function handleProviderCallback()
+    public function handleProviderCallback($provider)
     {
-       try
-       {
-        $socialUser = Socialite::driver('facebook')->user();
-    }
-    catch (\Exception $e)
-    {
+        try
+        {
+            $socialUser = Socialite::driver($provider)->user();
+        }
+        catch(\Exception $e)
+        {
+            return redirect('/');
+        }
+        //check if we have logged provider
+        $socialProvider = SocialProvider::where('provider_id',$socialUser->getId())->first();
+        if(!$socialProvider)
+        {
+            //create a new user and provider
+            $user = User::firstOrCreate(
+                ['email' => $socialUser->getEmail()],
+                ['name' => $socialUser->getName()]
+            );
+            $user->socialProviders()->create(
+                ['provider_id' => $socialUser->getId(), 'provider' => $provider]
+            );
+        }
+        else
+            $user = $socialProvider->user;
+        auth()->login($user);
         return redirect('/');
     }
 
-
-
-    $user = User::where('facebook_id',$socialUser->getId())->first();
-    if(!$user)
-        User::create([
-         'facebook_id' => $socialUser->getId(),
-         'name' => $socialUser->getName(),
-         'email' => $socialUser->getEmail(),
-         ]);
-    auth()->login($user);
-    return redirect()->to('/home');
-
-    //return $user->getEmail();
-}
    
 }

@@ -35,10 +35,22 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
-    'facebook' => [
-    'client_id' => '1551937854880784',
-    'client_secret' => '834580131ee91dd71d14feddb5701613',
-    'redirect' => 'http://localhost:8000/auth/facebook/callback',
-],
+
+    'facebook' => [ //change it to any provider
+        'client_id' => '1551937854880784',
+        'client_secret' => '834580131ee91dd71d14feddb5701613',
+        'redirect' => 'http://localhost:8000/auth/facebook/callback',
+    ],
+    'twitter' => [ //change it to any provider
+        'client_id' => 'Z4DC16pA473fRtBbDpTx2AJnp',
+        'client_secret' => 'dHHSVdzJPhIYqljcq5pw44D60fgot4pd7eoSZHZVVeb4D6DlkS',
+        'redirect' => 'http://localhost:8000/auth/twitter/callback',
+    ],
+    'google' => [ //change it to any provider
+        'client_id' => '4389117174-13viiku46i9vdjucvl6jkeo8k953c1bt.apps.googleusercontent.com',
+        'client_secret' => 'BcHfkAdwAugcrxB5rlLR76',
+        'redirect' => 'http://localhost:8000/auth/google/callback',
+    ],
+
 
 ];
