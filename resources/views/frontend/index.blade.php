@@ -149,7 +149,7 @@
                                     <div class="ragister-account account-login">        
                                         <h1 class="section-title title">Enter Palavar Hall</h1>
                                         <div class="login-options text-center">
-                                            <a href="#" class="facebook-login"><i class="fa fa-facebook"></i>Facebook Login</a>
+                                            <a href="/auth/facebook" class="facebook-login"><i class="fa fa-facebook"></i>Facebook Login</a>
                                             <a href="#" class="twitter-login"><i class="fa fa-twitter"></i>Twitter Login</a>
 
                                         </div>
