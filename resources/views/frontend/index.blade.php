@@ -159,18 +159,32 @@
                                         <form id="registation-form" role="form" method="POST" action="{{ route('login') }}">
                                             {{ csrf_field() }}
 
-                                            <div class="form-group">
-                                                <label>Username</label>
-                                                <input type="email" name="email" class="form-control" required="required">
+                                            <div class="form-group {{ $errors->has('email') ? ' has-error' : '' }}">
+                                                <label>Email</label>
+                                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
+
+                                                @if ($errors->has('email'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+                                @endif
                                             </div>
-                                            <div class="form-group">
+                                            <div class="form-group {{ $errors->has('password') ? ' has-error' : '' }}">
                                                 <label>Password</label>
-                                                <input type="password" name="password" class="form-control" required="required">
+                                                <input id="password" type="password" class="form-control" name="password" required>
+
+                                                @if ($errors->has('password'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('password') }}</strong>
+                                    </span>
+                                @endif
                                             </div>
                                             <!-- checkbox -->
                                             <div class="checkbox">
-                                                <label class="pull-left"><input type="checkbox" name="signing" id="signing"> Keep Me Login </label>
-                                                <label class="pull-left"><a href="#" class="pull-right ">Forgot Password </a> </label>
+                                                <label class="pull-left"><input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Keep Me Login </label>
+
+                                                <label class="pull-left"><a href="{{ route('password.request') }}" class="pull-right ">Forgot Password </a> </label>
+
                                             </div><!-- checkbox --> 
                                             <div class="submit-button text-center">
                                                 <button type="submit" class="btn btn-primary">Account Login</button>
