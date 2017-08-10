@@ -29,7 +29,7 @@
 
                 @else
 
-                <li class="dropdown user-panel"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i></a>
+                <li class="dropdown user-panel"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"><img src="/images/others/user-icon.png" alt="" /></a>
                     <div class="dropdown-menu top-user-section">
                         <div class="top-user-form">
 

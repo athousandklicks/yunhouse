@@ -2,10 +2,6 @@
 
 @section('title', '| YUNHOUSE: Assorted London Tales about the Africa')
 
-@include('partials.topbar')
-
-@include('partials.nav')
-
 @section('content')
 
 <div class="section">
@@ -191,7 +187,7 @@
                                             </div>
                                         </form> 
                                         <div class="new-user text-center">
-                                            <p>Don't have an account ? <a href="signup.html">Register Now</a> </p>
+                                            <p>Don't have an account ? <a href="/register">Register Now</a> </p>
                                         </div>
 
                                     </div>

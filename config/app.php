@@ -170,6 +170,7 @@ return [
         Collective\Html\HtmlServiceProvider::class,
 
         Laravel\Socialite\SocialiteServiceProvider::class,
+        Mews\Purifier\PurifierServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -233,6 +234,7 @@ return [
     'Html' => Collective\Html\HtmlFacade::class,
 
     'Socialite' => Laravel\Socialite\Facades\Socialite::class,
+    'Purifier' => Mews\Purifier\Facades\Purifier::class,
 
     ],
 

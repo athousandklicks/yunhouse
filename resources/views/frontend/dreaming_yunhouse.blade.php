@@ -1,4 +1,4 @@
-@extends('main')
+@extends('pages-layout')
 
 @section('title', "| Dreaming Yunhouse")
 

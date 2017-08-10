@@ -420,6 +420,7 @@
 	}
 	.navbar-nav > li > a{
 		line-height:15px;
+		color: #000000;
 	}
 	#mainmenu .dropdown-menu > li > a, 
 	.dropdown-menu{
@@ -668,7 +669,9 @@
 		margin-top:50px;
 	}
 	.page #navigation .navbar-header{
-		background-color:#fff;
+		background-image: url("/images/frontend/footerbg1.png");
+		background-color:#08205b;
+
 	}
 	.page .searchNlogin {
 		position: absolute;
@@ -683,6 +686,7 @@
 	.page .navbar-brand {
 		width:45%;
 		height:52px;
+
 	}
 	.page .page-breadcrumbs {
 		margin: 75px 0px 15px;

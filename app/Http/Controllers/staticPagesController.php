@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Tale;
+use App\Character;
 
 class staticPagesController extends Controller
 {
@@ -30,4 +32,17 @@ return view('frontend.dreaming_yunhouse');
 		return view('frontend.yunhouse_in_brief');
 
 	}
+
+	public function getYunhouseCharacters()
+	{
+		 $characters = Character::all();
+		return view('character.yunhouse_character',compact('characters'));
+	}
+
+	    public function getSingle($id) {
+    	// fetch from the DB based on slug
+    	$characters = Character::where('id', '=', $id)->first();
+    	return view('character.single',compact('characters'));
+    }
+
 }

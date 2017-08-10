@@ -3,13 +3,15 @@
 
 <head>
 	@include('partials.head')
+	@yield('stylesheet')
 </head>
-@yield('stylesheet')
+
 
 <body>
-	<div id="main-wrapper" class="homepage-two">
+	<div id="main-wrapper-home" class="homepage-two">
+@include('partials.topbar')
 
-
+@include('partials.nav')
 
 		<div class="container">
 			@yield('content')

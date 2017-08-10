@@ -1,4 +1,4 @@
-@extends('main')
+@extends('pages-layout')
 
 @section('title', "| Yunhouse in Brief")
 
@@ -76,13 +76,17 @@
                 		<p class="lead">In the year 1884, in the German City of Berlin, representatives of major European nations gathered around a giant map of the continent of Africa for the biggest imperialistic banquet in the history of mankind. Slices of the Dark Continent were served out to satisfy imperial hunger for territories – The Scramble For Africa – that had reached fever pitch.</p>
 
                 		<div id="post-content">
-                           <p>There is no record of any Africans’ presence at the Berlin Conference. Nor any evidence that Africans were ever informed or knew about the meeting. In fact, Africans got to know about the carve-up of their continent when Europeans turned up on their homelands with all manner of ploys to assert and claim the territorial possessions as apportioned in Berlin. The process was called The Pacification Of The Natives.</p>
+                         <p>There is no record of any Africans’ presence at the Berlin Conference. Nor any evidence that Africans were ever informed or knew about the meeting. In fact, Africans got to know about the carve-up of their continent when Europeans turned up on their homelands with all manner of ploys to assert and claim the territorial possessions as apportioned in Berlin. The process was called The Pacification Of The Natives.</p>
 
-                           <p>
+                         <p>
                             <img src="images/slides/main-slider1.png" class="img-responsive" alt="">
                         </p>
 
-                        <p>Yunhouse is founded by Africans whose personal experience of The Pacification Of The Natives is the Europeanisation of their minds through European education. Foundation inhabitants of Yunhouse identify themselves as a generation of Africans born within blood-dripping distance of The Great Berlin Carve-up. They are all students in London. They feel united by the uniqueness of being in London where they have insider perspective of the machinations of The Pacification Of The Natives: the conception, the design and the execution of colonial subjugation of their continent and its peoples. They form themselves into The Berliner Cult. Their motto: We shall never be pacified!</p>
+                        <p>Yunhouse is founded by Africans whose personal experience of The Pacification Of The Natives is the Europeanisation of their minds through European education. Foundation inhabitants of Yunhouse identify themselves as a generation of Africans born within blood-dripping distance of The Great Berlin Carve-up. They are all students in London. <aside class="pquote">
+                            <blockquote>
+                                <p>It is not an exaggeration to say that peas can be described as nothing less than perfect spheres of joy.</p>
+                            </blockquote>
+                        </aside>They feel united by the uniqueness of being in London where they have insider perspective of the machinations of The Pacification Of The Natives: the conception, the design and the execution of colonial subjugation of their continent and its peoples. They form themselves into The Berliner Cult. Their motto: We shall never be pacified!</p>
 
                         <p>Their initial meetings in a basement flat in Camden Town, north London, are characteristically noisy as the Berliners revel in crying their eyes out or laughing their bellies off over issues pertaining to their beloved continent. Lekwot Abaka, founder member in whose flat the meetings takes place, is given quit notice by his English landlady who could no longer stand the volume of the noise – especially the guffawing – from her basement.</p>
 
