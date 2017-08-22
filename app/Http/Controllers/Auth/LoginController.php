@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use App\Http\Controllers\Auth\Request;
 
 
 
@@ -27,7 +28,18 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/';
+    //return redirect()->intended(route('admin.index'));
+    //protected $redirectTo = '/';
+/*
+    protected function authenticated(Request $request, User $user)
+{
+    return redirect()->intended('/');
+}*/
+
+   protected $redirectTo = '/';
+
+
+
 
     /**
      * Create a new controller instance.

@@ -6,34 +6,36 @@
 
 @section('content')
 
-<div id="all">
 
-	<div id="content">
-		<div class="container">
+<div class="page-breadcrumbs">
+    <h1 class="section-title">{!!$characters->name!!} </h1>
+</div>
+<div class="section">
+    <div class="row">
+        <div class="col-sm-9">
+            <div id="site-content" class="site-content">
+                <div class="author-details">
 
-			<div class="col-md-3">
-                @include('partials.characters_menu')
-                <!-- /.col-md-3 -->
-            </div>
+                    <div class="author-info">
 
-            <div class="col-sm-9" id="blog-post">
+                        <p class="lead">
+                            {!!$characters->body!!}
+                        </p>
+
+                    </div>
 
 
-            <div class="box">
-                  <h1>{!!$characters->name!!}</h1>
-                  <div id="post-content">
-                     {!!$characters->body!!}
-                 </div>
-                 <!-- /#post-content -->
-             </div>
-             <!-- /.box -->
-         </div>
+                </div><!--/#site-content-->
 
-            </div>
-            <!-- /.container -->
 
+            </div><!--/.col-sm-9 -->    
         </div>
-    </div>
-    <!-- /#content -->
 
-    @endsection
+        <div class="col-sm-3">
+            @include('partials.right-side-bar');
+        </div>
+    </div>              
+</div><!--/.section-->
+
+
+@endsection

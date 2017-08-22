@@ -96,7 +96,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
-
+margin-top: 5px;
 }
 
 .section {
@@ -104,11 +104,9 @@ h1, h2, h3, h4, h5, h6 {
 	padding-left: 10px;
 	padding-right: 10px;
 	margin-bottom: 15px;
+	margin-top: 0px;
 }
 
-.section {
-	margin-bottom:20px;
-}
 
 .section-title {
 	margin-top: 5px;
@@ -117,10 +115,31 @@ h1, h2, h3, h4, h5, h6 {
 	position:relative;
 	font-size:24px;
 	text-transform:capitalize;
-	color:#000000;
+	color:#000;
 	font-weight:600;
 }
 
+.section-title-sidebar {
+	margin-top: 5px;
+	margin-bottom: 20px;
+	padding-bottom: 0;
+	position:relative;
+	font-size:24px;
+	text-transform:capitalize;
+	color:#e0e7ec;
+	font-weight:600;
+}
+
+.section-title-sidebar2 {
+	margin-top: 5px;
+	margin-bottom: 20px;
+	padding-bottom: 0;
+	position:relative;
+	font-size:18px;
+	text-transform:capitalize;
+	color:#ffffff;
+	font-weight:600;
+}
 .section-title-login {
 	margin-top: 5px;
 	margin-bottom: 20px;
@@ -151,9 +170,25 @@ h1, h2, h3, h4, h5, h6 {
 	height:2px;
 } 
 
-.section-title.title {
-	margin-bottom:20px;
+.section-title-sidebar.title {
+	margin-bottom:10px;
+	color:#fff;
+	text-align:center;
+	font-size: 20px;
 }
+
+.section-title-sidebar.title a {
+	margin-bottom:10px;
+	color:#f5523f;
+	text-align:center;
+	font-size: 20px;
+}
+
+.section-title-sidebar.title a:hover {
+	color:#fff;
+}
+
+
 
 .btn-primary.btn-animated {	
 	font-size: 12px;
@@ -349,7 +384,7 @@ img.mfp-img {
 }
 
 #navigation .sticky-nav .navbar-nav {
-	margin-left:220px;
+	margin-left:40px;
 } 
 
 #navigation .navbar{
@@ -358,12 +393,12 @@ img.mfp-img {
 	-ms-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
-	background-image: url("/images/frontend/footerbg1.png");
+	background-image: url("/images/frontend/footerbg.png");
 	background-repeat-y: no-repeat;
 	background-size:contain; 
 	background-repeat: repeat-x; 
 	background-color: #040e28;
-	height: 8%;
+	height: 0%;
 
 }
 
@@ -413,6 +448,7 @@ img.mfp-img {
 	#navigation .navbar-collapse {
 		padding: 0;
 		margin-bottom:0px; 
+		margin-left: 15%;
 	}
 	
 	#navigation .navbar-nav li, .dropdown {
@@ -929,6 +965,15 @@ img.mfp-img {
 	margin-top:10px;
 }
 
+.post .entry-details {
+	font-size:15px;
+	margin-top:10px;
+	color:#000;
+	line-height: 1.5em;
+	text-transform: none;
+}
+
+
 .catagory {
 	position:absolute;
 	top:20px;
@@ -1116,6 +1161,13 @@ img.mfp-img {
 	padding:30px;
 }
 
+.post-content2 {
+	padding-top:5px;
+	padding-bottom: 0px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
 .post-content i {
 	margin-right:5px;
 	-webkit-transition: all 0.5s ease-in-out;
@@ -1145,6 +1197,14 @@ img.mfp-img {
 	text-transform: uppercase;
 	font-size:22px;
 	line-height:1.3;
+	color: #08205b;
+}
+
+.entry2-title a{
+	text-transform: uppercase;
+	text-decoration: underline;
+	font-size:15px;
+	line-height:1;
 	color: #08205b;
 }
 
@@ -1539,6 +1599,8 @@ img.mfp-img {
 	background-color:#4968a9;
 }
 
+
+
 .social-icons a .fa-twitter{
 	background-color:#00aeef;
 }
@@ -1593,7 +1655,7 @@ img.mfp-img {
 }
 
 .widget {
-	margin-bottom:30px;
+	margin-bottom:10px;
 }
 
 .widget .post-list {
@@ -1799,13 +1861,13 @@ img.mfp-img {
 #twitter-feed, 
 .footer-widget{
 	background-color:#fff;
-	padding-top:50px;
-	padding-bottom:60px;
+	padding-top:20px;
+	padding-bottom:20px;
 	border-bottom:1px solid #f2f3f5;
 }
 
 #twitter-feed {
-	margin-top:40px;
+	margin-top:10px;
 }
 
 #twitter-feed a{
@@ -2069,7 +2131,7 @@ img.mfp-img {
 /* news details */
 .page .navbar-header {
 	position:absolute;
-	left:15px;
+	left:0px;
 	top:0;
 	width:100%;
 }
@@ -2290,6 +2352,8 @@ img.mfp-img {
 	font-weight:700;
 	padding:10px 25px;
 }
+
+
 
 #breaking-news ul li {
 	padding:10px 20px;
@@ -2919,7 +2983,7 @@ img.mfp-img {
 	margin-top:px;
 	margin-bottom:8px;
 	padding:20px 20px;
-	background-color:#226894;
+	background-color:#051646;
 }
 
 .ragister-account .section-title {
@@ -2945,12 +3009,10 @@ img.mfp-img {
 }
 
 .ragister-account .btn-primary {
-	margin-top:25px;
+	margin-top:0px;
 }
 
-.ragister-account a:hover{
-	color:#ed1c24;
-}
+
 
 .ragister-account .new-user {
 	margin-top:25px;
@@ -3025,8 +3087,12 @@ img.mfp-img {
 
 .ragister-account .devider {
 	position:relative;
-	margin-bottom:30px;
+	padding-left: 3px;
+	padding-right: 3px;
+	margin-bottom:15px;
+	margin-top:15px;
 	z-index:1;
+
 }
 
 .ragister-account .devider:after {
@@ -3043,8 +3109,8 @@ img.mfp-img {
 }
 .ragister-account .devider:before {
 	background-color: #fff;
-	width: 80px;
-	left: 50%;
+	width: 100px;
+	left: 45%;
 	height: 20px;
 	bottom: 0;
 	content: "";
@@ -3056,11 +3122,11 @@ img.mfp-img {
 .top-heading{
 	text-transform: uppercase;
 	color: #ffffff;
-	font-size: 90px;
+	font-size: 60px;
 	font-weight: 800;
 	padding-top: 0px;
 	padding-bottom: 0px;
-	margin-top: 20px;
+	margin-top: 0px;
 	margin-bottom: 0px;
 	text-align: center;
 	vertical-align: middle;
@@ -3082,12 +3148,13 @@ img.mfp-img {
 
 .top-author{
 	text-transform: capitalize;
-	color: #ffffff;
-	font-size: 30px;
-	font-weight: 700;
-	padding: 0px;
+	background-color: #fff;
+	color: #051646;
+	font-size: 15px;
+	font-weight: 500;
+	padding-top: 2px;
 	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 0px;
 	text-align: center;
 	vertical-align: middle;
 }
@@ -3098,8 +3165,18 @@ img.mfp-img {
 	font-weight: 700;
 }
 
+.read-palavar a{
+	color: #d9232d;
+	font-size: 16px;
+	font-weight: 700;
+}
+
 /*=========================================:: END :: =============================================*/
 
+.lead-sidebar{
+	font-size: 18px;
+	color:#fff;
+}
 
 
 .pquote {
@@ -3119,6 +3196,15 @@ blockquote {
 	font-size: 45px;
 	font-weight: bold;
 }
+
+.image-wrap{
+	float: left;
+	margin-right:15px;
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+
+
 
 
 

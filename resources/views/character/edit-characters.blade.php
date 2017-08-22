@@ -33,7 +33,7 @@
    <div class="work-progres">
 
     <div class="table-responsive">
-      {!!Form::model($character, ['route'=>['characters.update', $character->id], 'method' => 'PATCH', 'onsubmit' => 'return ConfirmSave()'])!!}  
+      {!!Form::model($character, ['route'=>['characters.update', $character->id], 'method' => 'PATCH', 'files' => true, 'onsubmit' => 'return ConfirmSave()'])!!}  
 
 
       {{csrf_field()}}

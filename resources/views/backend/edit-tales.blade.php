@@ -33,7 +33,7 @@
    <div class="work-progres">
 
     <div class="table-responsive">
-    {!!Form::model($tales, ['route'=>['tales.update', $tales->id], 'method' => 'PUT', 'onsubmit' => 'return ConfirmSave()'])!!}  
+    {!!Form::model($tales, ['route'=>['tales.update', $tales->id], 'method' => 'PUT', 'files' => true, 'onsubmit' => 'return ConfirmSave()'])!!}  
 
      {{csrf_field()}}
 
@@ -44,6 +44,23 @@
 
      {{ Form::label('body', 'Edit Tale:') }}
      {{ Form::textarea('body', null, array('class'=>'form-control')) }}
+
+     <br>
+          <hr>
+          {{ Form::label('published', 'Do you want to Edit Publish status?') }}
+          
+          {{ Form::select('published', 
+          ['0' => 'UNPUBLISH THIS TALE', '1' => 'PUBLISH THIS TALE'], null,array('class'=>'form-control')) }}
+
+          <br/>
+          {{ Form::label('featured_tale','Upload Tale Banner Image') }}
+          {{ Form::file('featured_tale', array('class'=>'btn btn-success btn-sm')) }}
+          <br/>           
+
+          <!-- reset buttons -->
+          {{ Form::reset('Reset', array('id'=>'','class'=>'btn btn-success btn-sm')) }}
+          <br/>
+
 
      {{ Form::submit('Save Changes', array('class'=>'btn btn-success btn-lg', 'style' => 'margin-top: 20px;' )) }}
      {!! Form::close() !!}

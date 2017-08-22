@@ -18,7 +18,8 @@ class YuntaleController extends Controller
 
     	public function getTales()
 	{
-		$tales = Tale::orderBy('created_at', 'asc')->paginate(5);
+		$tales = Tale::orderBy('created_at', 'asc')->where('published', '=', true)->paginate(5);
+        //dd($tales);
 		return view('yuntale.list-of-tales',compact('tales'));
 	}
    

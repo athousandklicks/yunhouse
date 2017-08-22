@@ -6,7 +6,7 @@
 
 
 <div class="blank">
-	<h2>TITLE: {{$character->name}}</h2>
+	<h2>NAME OF CHARACTER: {{$character->name}}</h2>
 
 	<div class="blankpage-main">
 	<p>

@@ -32,7 +32,8 @@
 						Please all fields are required in order to add new page
 					</div>
 
-					{!! Form::open(array('route' => 'tales.store')) !!}
+						{!! Form::open(['route' => 'tales.store', 'method' => 'POST', 'files' => true]) !!}
+
 
 					{{csrf_field()}}
 
@@ -48,6 +49,15 @@
 					
 					{{ Form::select('published', 
 					['0' => 'DO NOT PUBLISH', '1' => 'PUBLISH'], null,array('class'=>'form-control')) }}
+
+					<br/>
+					{{ Form::label('featured_tale','Upload Tale Banner Image') }}
+					{{ Form::file('featured_tale', array('class'=>'btn btn-success btn-sm')) }}
+					<br/>					  
+
+					<!-- reset buttons -->
+					{{ Form::reset('Reset', array('id'=>'','class'=>'btn btn-success btn-sm')) }}
+					<br/>
 
 					{{ Form::submit('Save Tale', array('class'=>'btn btn-success btn-lg', 'style' => 'margin-top: 20px;' )) }}
 					{!! Form::close() !!}

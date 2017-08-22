@@ -10,7 +10,7 @@ class staticPagesController extends Controller
 {
 	public function getIndex()
 	{
-		//$index = Index::all();
+		$tales = Tale::all();
 		return view('frontend.index');
 	}
 
@@ -43,6 +43,10 @@ return view('frontend.dreaming_yunhouse');
     	// fetch from the DB based on slug
     	$characters = Character::where('id', '=', $id)->first();
     	return view('character.single',compact('characters'));
+    }
+
+    public function getYunhouseWelcome(){
+
     }
 
 }

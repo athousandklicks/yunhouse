@@ -6,9 +6,15 @@ use Illuminate\Http\Request;
 use App\Tale;
 use Purifier;
 use Session;
+use App\Comment;
 
 class TalesController extends Controller
 {
+
+  public function __construct()
+    {
+        $this->middleware('auth:admin');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -16,10 +22,7 @@ class TalesController extends Controller
      */
     public function index()
     {
-               //Store all the pages in a variable
         $tales = Tale::all();
-
-        //return a view with all the variable passed in
         return view('backend.tales-list',compact('tales'));
     }
 
@@ -55,8 +58,9 @@ class TalesController extends Controller
     {
                      //validate data entry
         $this->validate($request, array(
-            'title' => 'required|max:1000',
+            'title' => 'required|max:1000|unique:tales,title',
             'body'  => 'required',
+            'featured_tale'=>'image|mimes:png,jpg,jpeg|max:10000'
           //  'published'  => 'required|max:8'
             ));
 
@@ -71,7 +75,15 @@ class TalesController extends Controller
         $tales -> slug = strtolower(preg_replace('/\s+/', '_', $request -> title));
         
         $tales -> published = $request -> published; //assign the title
-       
+
+if ($request->hasFile('featured_tale')) {
+        $banner_image=$request->featured_tale;
+        if($banner_image){
+          $imageName=$banner_image->getClientOriginalName();
+          $banner_image->move('images/tales/',$imageName);
+          $tales['featured_tale']=$imageName;
+      }
+}
 
 
         $tales -> save(); //save to the database
@@ -118,16 +130,35 @@ class TalesController extends Controller
      */
     public function update(Request $request, $id)
     {
+       $tales = Tale::find($id);
             //validate data entry
+       if ($request->input('title') == $tales->title) {
         $this->validate($request, array(
-            'title' => 'required|max:255',
-            'body'  => 'required'
+            'body'  => 'required',
+            'featured_tale'=>'image|mimes:png,jpg,jpeg|max:10000'
             ));
+    }else{
+        $this->validate($request, array(
+            'title' => 'required|max:1000|unique:tales,title',
+            'body'  => 'required',
+            'featured_tale'=>'image|mimes:png,jpg,jpeg|max:10000'
+            ));
+    }
+    $tales = Tale::find($id);
 
-          $tales = Tale::find($id);
+    $tales -> title = $request->input('title');
+    $tales -> body = Purifier::clean($request->input('body'));
 
-        $tales -> title = $request->input('title');
-        $tales -> body = Purifier::clean($request->input('body'));
+    $tales -> slug = strtolower(preg_replace('/\s+/', '_', $request -> title));
+
+        $tales -> published = $request -> published; //assign the title
+
+        $banner_image=$request->featured_tale;
+        if($banner_image){
+          $imageName=$banner_image->getClientOriginalName();
+          $banner_image->move('images/tales/',$imageName);
+          $tales['featured_tale']=$imageName;
+      }
 
         $tales -> save(); //save to the database
 
@@ -145,7 +176,9 @@ class TalesController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $tales = Tale::find($id);
+         $tales->delete();
+         return redirect()->route('tales.index');
     }
 
 
@@ -160,7 +193,7 @@ class TalesController extends Controller
         return view('backend.totm-index',compact('tales'));
     }
 
-        public function updateTotm(Request $request, $id)
+    public function updateTotm(Request $request, $id)
     {
         //retrive post from DB and save to a variable
         $tales = Tale::find($id);

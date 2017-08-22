@@ -1,10 +1,6 @@
-@extends('main')
+@extends('pages-layout')
 
 @section('title', '| YUNHOUSE: Assorted London Tales about the Africa')
-
-        @include('partials.topbar')
-
-        @include('partials.nav')
 
 @section('content')
 
@@ -12,7 +8,7 @@
             <div class="container">
                 <div class="row">
                     <!-- user-login -->         
-                    <div class="col-sm-6 col-sm-offset-3">
+                    <div class="col-sm-4 col-sm-offset-4">
                         <div class="ragister-account">      
                             <h1 class="section-title title">Become a Member of Palavar Hall</h1>
                             

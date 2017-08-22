@@ -18,7 +18,8 @@ class CharactersController extends Controller
      */
     public function index()
     {
-        //
+        $characters = Character::all();
+        return view('character.list-of-characters',compact('characters'));
     }
 
     /**
@@ -137,6 +138,8 @@ if ($request->hasFile('img')) {
      */
     public function destroy($id)
     {
-        //
+        $character = Character::find($id);
+         $character->delete();
+         return redirect()->route('characters.index');
     }
 }

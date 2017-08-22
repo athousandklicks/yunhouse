@@ -16,25 +16,17 @@
                                 <div class="post">
                                     <div class="entry-header">
                                         <div class="entry-thumbnail">
-                                            <img class="img-responsive" src="images/frontend/index-cover.png" alt="" />
+                                            <img class="img-responsive" src="images/frontend/cover-new.png" alt="" />
                                         </div>
                                     </div>
-                                    <div class="post-content">                              
-
-                                        <h2 class="entry-title">
-                                            <a href="#">Dreaming Yunhouse</a>
-                                        </h2>
-                                        <div class="entry-content">
-                                            <h2 class="entry-title"> I began dreaming of Yunhouse from the moment of my arrival in Europe in the middle of the last century. It was a dream that would afflict my career <span class="read-more"><a href="#">...Read More</a></span></h2>
-                                        </div>
-                                    </div>
+                                    
 
                                 </div><!--/post--> 
                             </div><!--/.section-->      
                         </div><!--/.left-content-->
                     </div>
-
-                    <div class="col-sm-6">
+<div class="row">
+                    <div class="col-sm-3">
                         <div class="left-content">
                             <div class="world-news">
 
@@ -44,13 +36,38 @@
                                             <img class="img-responsive" src="images/frontend/col.png" alt="" />
                                         </div>
                                     </div>
-                                    <div class="post-content">                              
+                                    <div class="post-content2">                              
 
-                                        <h2 class="entry-title">
-                                            <a href="#">Yunhouse in Brief</a>
+                                        <h2 class="entry2-title">
+                                            <a href="/yunhouse-in-brief">Yunhouse in Brief</a>
                                         </h2>
                                         <div class="entry-content">
-                                            <h2 class="entry-title">In the year 1884, in the German City of Berlin, representatives of major European nations gathered around a giant map of the continent of Africa <span class="read-more"><a href="#">...Read More</a></span></h2>
+                                            <h2 class="entry-details">In the year 1884, in the German City of Berlin <span class="read-more"><a href="/yunhouse-in-brief">...Read More</a></span></h2>
+                                        </div>
+                                    </div>
+
+                                </div><!--/post--> 
+                            </div><!--/.section-->      
+                        </div><!--/.left-content-->
+
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="left-content">
+                            <div class="world-news">
+
+                                <div class="post">
+                                    <div class="entry-header">
+                                        <div class="entry-thumbnail">
+                                            <img class="img-responsive" src="images/frontend/author.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="post-content2">                              
+
+                                        <h2 class="entry2-title">
+                                            <a href="/dreaming-yunhouse">Dreaming Yunhouse</a>
+                                        </h2>
+                                        <div class="entry-content">
+                                            <h2 class="entry-details">I began dreaming of Yunhouse from the moment <span class="read-more"><a href="/dreaming-yunhouse">...Read More</a></span></h2>
                                         </div>
                                     </div>
 
@@ -60,6 +77,58 @@
 
                     </div>
 
+                    <div class="col-sm-3">
+                        <div class="left-content">
+                            <div class="world-news">
+
+                                <div class="post">
+                                    <div class="entry-header">
+                                        <div class="entry-thumbnail">
+                                            <img class="img-responsive" src="images/frontend/about-author.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="post-content2">                              
+
+                                        <h2 class="entry2-title">
+                                            <a href="/about-author">About the Author</a>
+                                        </h2>
+                                        <div class="entry-content">
+                                            <h2 class="entry-details">Ad’Obe Obe has been resident in London since the <span class="read-more"><a href="/about-author">...Read More</a></span></h2>
+                                        </div>
+                                    </div>
+
+                                </div><!--/post--> 
+                            </div><!--/.section-->      
+                        </div><!--/.left-content-->
+
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="left-content">
+                            <div class="world-news">
+
+                                <div class="post">
+                                    <div class="entry-header">
+                                        <div class="entry-thumbnail">
+                                            <img class="img-responsive" src="images/frontend/dream.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="post-content2">                              
+
+                                        <h2 class="entry2-title">
+                                            <a href="/yunhouse-character">Yunhouse Characters</a>
+                                        </h2>
+                                        <div class="entry-content">
+                                            <h2 class="entry-details">Cy, as he is known to everyone in Yunhouse, is named after  <span class="read-more"><a href="/yunhouse-character">...Read More</a></span></h2>
+                                        </div>
+                                    </div>
+
+                                </div><!--/post--> 
+                            </div><!--/.section-->      
+                        </div><!--/.left-content-->
+
+                    </div>
+</div>
                 </div>
             </div><!--/#site-content-->
             <div class="row">
@@ -70,18 +139,14 @@
                                 <div class="post medium-post">
                                     <div class="entry-header">
                                         <div class="entry-thumbnail">
-                                            <img class="img-responsive" src="images/author/1.jpg" alt="" />
+                                            <img class="img-responsive" src="images/tales/welcome-to-yunhouse.jpg" alt="" />
                                         </div>
                                     </div>
-                                    <div class="post-content">                              
-
-                                        <h2 class="entry-title">
-                                            <a href="#">About the Author</a>
-                                        </h2>
+                                    <div class="post-content2">
                                         <div class="entry-content">
                                             <h2 class="entry-title">
-                                                Ad’Obe Obe has been resident in London since the Easter of 1974. He studied chemical engineering in Germany and  
-                                                <span class="read-more"><a href="#">...Read More</a></span></h2>
+                                                LAST CHRISTMAS HAPPENED one thousand nine hundred and seventy-three hours ago. I counted them.  
+                                                <span class="read-more"><a href="{{ url('yuntale/welcome_to_yunhouse') }}">...Read Full Text</a></span></h2>
                                             </div>
                                         </div>
                                     </div><!--/post--> 
@@ -92,17 +157,15 @@
                                     <div class="post medium-post">
                                         <div class="entry-header">
                                             <div class="entry-thumbnail">
-                                                <img class="img-responsive" src="images/frontend/dreaming.png" alt="" />
+                                                <img class="img-responsive" src="images/tales/mother-africa.png" alt="" />
                                             </div>
                                         </div>
-                                        <div class="post-content">                              
-                                            <h2 class="entry-title">
-                                                <a href="#">Yunhouse Characters</a>
-                                            </h2>
+                                        <div class="post-content2">                              
+                                        
                                             <div class="entry-content">
                                                 <h2 class="entry-title">
-                                                    Cy, as he is known to everyone in Yunhouse, is named after a Welshman who was a guest at his naming ceremony (c1890).  
-                                                    <span class="read-more"><a href="#">...Read More</a></span></h2>
+                                                    The 20th Century was drawing to a close when the press release came: “ALL HUMANS ON PLANET EARTH ARE DESCENDED FROM 
+                                                    <span class="read-more"><a href="{{ url('yuntale/mother_africa') }}">...Read Full Text</a></span></h2>
                                                 </div>
                                             </div>
                                         </div><!--/post--> 
@@ -112,17 +175,15 @@
                                         <div class="post medium-post">
                                             <div class="entry-header">
                                                 <div class="entry-thumbnail">
-                                                    <img class="img-responsive" src="images/frontend/palavar-hall.png" alt="" />
+                                                    <img class="img-responsive" src="images/tales/palavar-hall-bg.png" alt="" />
                                                 </div>
                                             </div>
-                                            <div class="post-content">                              
-                                                <h2 class="entry-title">
-                                                    <a href="#">About Palavar Hall</a>
-                                                </h2>
+                                            <div class="post-content2">                              
+                                                
                                                 <div class="entry-content">
                                                     <h2 class="entry-title">
                                                         How about a letter to Mother Africa. Tell her how her descendants have evolved, the hatred, the love, the variety    
-                                                        <span class="read-more"><a href="#">...Read More</a></span></h2>
+                                                        <span class="read-more"><a href="palavar">...Read More</a></span></h2>
                                                     </div>
                                                 </div>
                                             </div><!--/post--> 
@@ -134,143 +195,12 @@
                         </div>
 
                     </div><!--/.col-sm-9 -->    
-
                     <div class="col-sm-3">
-                        <div id="sitebar">
-                            <div class="widget">
-
-                                <div class="post medium-post">
-
-
-                                    <div class="ragister-account account-login">        
-                                        <h1 class="section-title title">Enter Palavar Hall</h1>
-                                        <div class="login-options text-center">
-                                            <a href="/auth/facebook" class="facebook-login"><i class="fa fa-facebook"></i>Facebook Login</a>
-                                            <a href="/auth/twitter" class="twitter-login"><i class="fa fa-twitter"></i>Twitter Login</a>
-                                            <a href="/auth/google" class="google-login"><i class="fa fa-google-plus"></i>Google Login</a>
-
-                                        </div>
-                                        <div class="devider text-center">Or</div>
-                                        
-                                        <form id="registation-form" role="form" method="POST" action="{{ route('login') }}">
-                                            {{ csrf_field() }}
-
-                                            <div class="form-group {{ $errors->has('email') ? ' has-error' : '' }}">
-                                                <label>Email</label>
-                                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
-
-                                                @if ($errors->has('email'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-                                            </div>
-                                            <div class="form-group {{ $errors->has('password') ? ' has-error' : '' }}">
-                                                <label>Password</label>
-                                                <input id="password" type="password" class="form-control" name="password" required>
-
-                                                @if ($errors->has('password'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                                            </div>
-                                            <!-- checkbox -->
-                                            <div class="checkbox">
-                                                <label class="pull-left"><input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Keep Me Login </label>
-
-                                                <label class="pull-left"><a href="{{ route('password.request') }}" class="pull-right ">Forgot Password </a> </label>
-
-                                            </div><!-- checkbox --> 
-                                            <div class="submit-button text-center">
-                                                <button type="submit" class="btn btn-primary">Account Login</button>
-                                            </div>
-                                        </form> 
-                                        <div class="new-user text-center">
-                                            <p>Don't have an account ? <a href="/register">Register Now</a> </p>
-                                        </div>
-
-                                    </div>
-                                </div><!--/post--> 
-                                <div class="widget follow-us">
-                                    <h1 class="section-title title">Follow Yunhouse</h1>
-                                    <ul class="list-inline social-icons">
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-
-                                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                                    </ul>
-
-                                </div><!--/#widget-->
-                                <div class="widget write-review">
-
-                                    <div id="breaking-news">
-                                        <span><a href="#">Write a Review</a></span>
-                                    </div>
-                                </div><!--/#widget-->
-
-                            </div><!--/#widget-->
-
-
-
-                        </div><!--/#sitebar-->
+                        @include('partials.right-side-bar')
                     </div>
                 </div>    
 
-                <div class="row">
-                    <div class="col-sm-12">
-                     <div class="col-sm-6">
-                        <div class="left-content">
-                            <div class="world-news">
-
-                                <div class="post">
-                                    <div class="entry-header">
-                                        <div class="entry-thumbnail">
-                                            <img class="img-responsive" src="images/tales/mother-africa.png" alt="" />
-                                        </div>
-                                    </div>
-                                    <div class="post-content">                              
-
-                                        <h2 class="entry-title">
-                                            <a href="#">MOTHER AFRICA</a>
-                                        </h2>
-                                        <div class="entry-content">
-                                            <h2 class="entry-title"> The 20th Century was drawing to a close when the press release came: “ALL HUMANS ON PLANET EARTH ARE DESCENDED FROM AN AFRICAN WOMAN”. <span class="read-more"><a href="#">...Read More</a></span></h2>
-                                        </div>
-                                    </div>
-
-                                </div><!--/post--> 
-                            </div><!--/.section-->      
-                        </div><!--/.left-content-->
-                    </div>
-
-                    <div class="col-sm-6">
-                        <div class="left-content">
-                            <div class="world-news">
-
-                                <div class="post">
-                                    <div class="entry-header">
-                                        <div class="entry-thumbnail">
-                                            <img class="img-responsive" src="images/tales/welcome-to-yunhouse.png" alt="" />
-                                        </div>
-                                    </div>
-                                    <div class="post-content">                              
-
-                                        <h2 class="entry-title">
-                                            <a href="#">WELCOME TO YUNHOUSE</a>
-                                        </h2>
-                                        <div class="entry-content">
-                                            <h2 class="entry-title"> LAST CHRISTMAS HAPPENED one thousand nine hundred and seventy-three hours ago. I counted them. This is the sort of thing you do when you are actively <span class="read-more"><a href="#">...Read More</a></span></h2>
-                                        </div>
-                                    </div>
-
-                                </div><!--/post--> 
-                            </div><!--/.section-->      
-                        </div><!--/.left-content-->
-                    </div>
-                </div>
-            </div>          
+         
         </div><!--/.section-->
 
 
@@ -290,9 +220,9 @@
                                 <p>...regarded by Africans all over the world as their intellectual property since that day a renegade group of Africans legally gained material possession of the building and declared it a Colony of Africa in the year Nineteen Hundred And Fifty-One – Anno Domini.</p>
                             </div>
                             <div class="twitter-feed">
-                             
+                               
                                 
-                                <p>Picture categorised Africans who fought and won The First Battle For Yunhouse as “Radical Blacks” whose views on Africa would subsequently be fitted with caps of quotation marks before they could sit in its editorial pages, </p>
+                                <p>Picture categorised Africans who fought and won The First Battle For Yunhouse as “Radical Blacks” whose views on Africa would subsequently be fitted with caps of quotation marks before they could sit in its editorial pages. </p>
                             </div>
                         </div>
                     </div>

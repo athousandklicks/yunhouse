@@ -41,17 +41,18 @@
 	color: #fff;
 }
 
+
 #breaking-news a{
 	color: #fff;
 }
 
 #breaking-news a:hover{
-	color: #051646;
+	color: #bccefb;
 }
 
 #breaking-news span:hover{
 	color:#051646;
-	background-color:#ffffff;
+	background-color:#051646;
 }
 
 .form-control:focus, 

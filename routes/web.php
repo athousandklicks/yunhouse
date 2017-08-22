@@ -16,6 +16,7 @@ Route::get('about-author', 'staticPagesController@getAboutAuthor');
 Route::get('dreaming-yunhouse', 'staticPagesController@getDreamingYunhouse');	
 Route::get('yunhouse-in-brief', 'staticPagesController@getYunhouseInBrief');
 Route::get('yunhouse-character', 'staticPagesController@getYunhouseCharacters');
+Route::get('welcome-to-yunhouse', 'staticPagesController@getYunhouseWelcome');
 Route::get('yunhouse-character/{id}', ['as' => 'character.single', 'uses' => 'staticPagesController@getSingle']);
 
 
@@ -37,6 +38,10 @@ Route::get('palavar', 'characterController@getPalavar');
 
 Route::get('list-of-tales', 'YuntaleController@getTales');
 Route::get('yuntale/{slug}', ['as' => 'yuntale.single', 'uses' => 'YuntaleController@getSingle'])->where('slug', '[\w\d\-\_]+');
+
+Route::get('comments/{id}', ['uses' => 'CommentsController@index', 'as' => 'comments.index']);
+
+Route::post('comments/{tale_id}', ['uses' => 'CommentsController@store', 'as' => 'comments.store']);
 
 
 Auth::routes();
@@ -66,15 +71,28 @@ Route::post('tales/update-totm/{id}', ['as'=>'tales.update-totm', 'uses' => 'Tal
 
 Route::resource('characters', 'CharactersController');
 Route::resource('tales', 'TalesController');
-Route::resource('admin', 'BackendIndexController');
+Route::resource('reviews', 'ReviewsController');
+//Route::resource('admin', 'BackendIndexController');
+
+
 /*
-Route::resource('mother-africa', 'OneController');
-Route::resource('welcome-to-yunhouse', 'TwoController');
-Route::resource('africa-house', 'ThreeController');
-Route::resource('a-picture-of-africa', 'FourController');
-Route::resource('in-the-name-of-africa', 'FiveController');
-Route::resource('whose-africa-is-it', 'SixController');
-Route::resource('the-chips', 'SevenController');
-Route::resource('onward-african-soldiers', 'EightController');
-Route::resource('the-berliner-cult', 'NineController');
+Admin Controller
 */
+
+
+Route::prefix('admin')->group(function() {
+  Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
+  Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
+  Route::get('/admin', 'AdminController@index')->name('admin.index');
+
+
+
+
+  //Route::get('/logout', 'Auth\AdminLoginController@logout')->name('admin.logout');
+
+  // Password reset routes
+  //Route::post('/password/email', 'Auth\AdminForgotPasswordController@sendResetLinkEmail')->name('admin.password.email');
+  //Route::get('/password/reset', 'Auth\AdminForgotPasswordController@showLinkRequestForm')->name('admin.password.request');
+  //Route::post('/password/reset', 'Auth\AdminResetPasswordController@reset');
+  //::get('/password/reset/{token}', 'Auth\AdminResetPasswordController@showResetForm')->name('admin.password.reset');
+});

@@ -1,38 +1,38 @@
-@extends('main')
+@extends('pages-layout')
 
-@section('title', "| Characters - Afrinc")
+@section('title', "| Afrinc")
+
 
 
 @section('content')
 
-<div id="all">
+<div class="page-breadcrumbs">
+    <h1 class="section-title">Afrinc</h1>
+</div>
+<div class="section">
+    <div class="row">
+        <div class="col-sm-9">
+            <div id="site-content" class="site-content">
+                <div class="author-details">
 
-	<div id="content">
-		<div class="container">
+                    <div class="author-info">
 
-			<div class="col-md-3">
-                @include('partials.characters_menu')
-                <!-- /.col-md-3 -->
-            </div>
+                        <p class="lead">
+                        This is a Purpose-built African Computer_Designed And Used Exclusively By Non-Africans. It is based in Liechtenstein. Yunhouse authorities manage to obtain a full printout of Afrinc’s database. There is strong evidence to suggest that The Computer’s bowels contains everything ever printed in The Africa Picture [No Spitting!]. It is also believed this computer may have data on everything there is to know about Yunhouse and more.</p>
 
-            <div class="col-sm-9" id="blog-post">
+                    </div>
 
 
-            <div class="box">
-                  <h1>Afrinc</h1>
-                  <div id="post-content">
-                     <p>This is a Purpose-built African Computer_Designed And Used Exclusively By Non-Africans. It is based in Liechtenstein. Yunhouse authorities manage to obtain a full printout of Afrinc’s database. There is strong evidence to suggest that The Computer’s bowels contains everything ever printed in The Africa Picture [No Spitting!]. It is also believed this computer may have data on everything there is to know about Yunhouse and more.</p>
-                 </div>
-                 <!-- /#post-content -->
-             </div>
-             <!-- /.box -->
-         </div>
+                </div><!--/#site-content-->
 
-            </div>
-            <!-- /.container -->
 
+            </div><!--/.col-sm-9 -->    
         </div>
-    </div>
-    <!-- /#content -->
 
-    @endsection
+        <div class="col-sm-3">
+            @include('partials.right-side-bar');
+        </div>
+    </div>              
+</div><!--/.section-->
+
+@endsection

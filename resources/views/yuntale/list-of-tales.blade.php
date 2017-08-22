@@ -20,7 +20,7 @@
                                 <div class="post">
                                     <div class="entry-header">
                                         <div class="entry-thumbnail">
-                                            <img class="img-responsive" src="images/post/life1.jpg" alt="" />
+                                            <img class="img-responsive" src="{{asset('images/tales/'.$tale->featured_tale)}}" alt="" />
                                         </div>
                                     </div>
                                     <div class="post-content">                              
@@ -33,7 +33,7 @@
                                             <a href="news-details.html">{{$tale->title}}</a>
                                         </h2>
                                         <div class="entry-content">
-                                            {{strip_tags(str_limit($tale->body, 150, '...'))}} <span class="read-more"><a href="{{ url('yuntale/'.$tale->slug) }}">...Read Full Tale</a></span>
+                                            {{strip_tags(str_limit($tale->body, 120, '...'))}} <span class="read-more"><a href="{{ url('yuntale/'.$tale->slug) }}">...Read Full Tale</a></span> OR <span class="read-palavar"><a href="{{ url('comments/'.$tale->id) }}">Join the Discussion in Palavar Hall</a></span>
                                         </div>
                                     </div>
                                 </div><!--/post--> 
@@ -51,25 +51,8 @@
                         </div>
                     </div><!--/.col-sm-9 -->    
                     
-                    <div id="sticky" class="col-sm-3">
-                        <div id="sitebar">
-                            <div class="widget">
-                                <div class="add featured-add">
-                                    <a href="#"><img class="img-responsive" src="images/post/add/add1.jpg" alt="" /></a>
-                                </div>
-                            </div><!--/#widget-->
-                            
-                            <div class="widget follow-us">
-                                <h1 class="section-title title">Follow Us</h1>
-                                <ul class="list-inline social-icons">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                                </ul>
-                            </div><!--/#widget-->   
-                        </div><!--/#sitebar-->
+                    <div class="col-sm-3">
+                        @include('partials.right-side-bar')
                     </div>
                 </div>              
             </div><!--/.section-->
