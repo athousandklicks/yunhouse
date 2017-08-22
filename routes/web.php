@@ -72,7 +72,7 @@ Route::post('tales/update-totm/{id}', ['as'=>'tales.update-totm', 'uses' => 'Tal
 Route::resource('characters', 'CharactersController');
 Route::resource('tales', 'TalesController');
 Route::resource('reviews', 'ReviewsController');
-//Route::resource('admin', 'BackendIndexController');
+Route::resource('admins', 'AdminController');
 
 
 /*
@@ -83,7 +83,7 @@ Admin Controller
 Route::prefix('admin')->group(function() {
   Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
   Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
-  Route::get('/admin', 'AdminController@index')->name('admin.index');
+  Route::get('/dashboard', 'AdminController@dashboard')->name('admin.dashboard');
 
 
 

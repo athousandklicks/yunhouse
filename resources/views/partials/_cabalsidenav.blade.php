@@ -33,7 +33,7 @@
 
 
 
-	<li id="menu-home" ><a href="{{route('admin.index')}}"><i class="fa fa-tachometer"></i><span>Dashboard</span></a></li>
+	<li id="menu-home" ><a href="{{route('admin.dashboard')}}"><i class="fa fa-tachometer"></i><span>Dashboard</span></a></li>
 
 
 	<li id="menu-academico" ><a href="#"><i class="fa fa-file-text"></i><span>Manage Characters</span><span class="fa fa-angle-right" style="float: right"></span></a>
@@ -66,8 +66,8 @@
 
 	<li id="menu-academico" ><a href="#"><i class="fa fa-photo"></i><span>Manage Admins</span><span class="fa fa-angle-right" style="float: right"></span></a>
 		<ul id="menu-academico-sub" >
-		<li id="menu-academico-boletim" ><a href="{{route('reviews.create')}}">Add Admin</a></li>
-		<li id="menu-academico-avaliacoes" ><a href="{{route('reviews.index')}}">List of Admins</a></li>			           
+		<li id="menu-academico-boletim" ><a href="{{route('admins.create')}}">Add Admin</a></li>
+		<li id="menu-academico-avaliacoes" ><a href="{{route('admins.index')}}">List of Admins</a></li>			           
 	</ul>
 </li>
 

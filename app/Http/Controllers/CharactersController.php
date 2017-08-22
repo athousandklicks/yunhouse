@@ -112,15 +112,15 @@ class CharactersController extends Controller
 
         $character -> name = $request->input('name');
         $character -> body = Purifier::clean($request->input('body'));
-if ($request->hasFile('img')) {
-    $banner_image = $request->file('img');
+        if ($request->hasFile('img')) {
+            $banner_image = $request->file('img');
        // $banner_image=$request->img;
-  
-          $imageName=$banner_image->getClientOriginalName();
-          $banner_image->move('images/character/',$imageName);
-          $character['img']=$imageName;
-   
-}
+            
+            $imageName=$banner_image->getClientOriginalName();
+            $banner_image->move('images/character/',$imageName);
+            $character['img']=$imageName;
+            
+        }
 
         $character -> save(); //save to the database
 
@@ -139,7 +139,7 @@ if ($request->hasFile('img')) {
     public function destroy($id)
     {
         $character = Character::find($id);
-         $character->delete();
-         return redirect()->route('characters.index');
+        $character->delete();
+        return redirect()->route('characters.index');
     }
 }
