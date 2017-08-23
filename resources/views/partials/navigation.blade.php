@@ -101,7 +101,7 @@
 
 
 
-								<li class="sports"><a href="#">Download</a></li>
+								<li class="sports"><a href="/list-of-downloads">Download</a></li>
 
 								
 

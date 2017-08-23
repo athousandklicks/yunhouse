@@ -4,7 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+
 use App\Admin;
+use App\User;
+use App\Tale;
+use App\Review;
+use App\Comment;
+
 use Session;
 
 class AdminController extends Controller
@@ -26,7 +32,15 @@ class AdminController extends Controller
 
     public function dashboard()
     {
-        return view('backend.index');
+       
+        $admins = Admin::all();
+        $users = User::all();
+        $tales = Tale::all();
+        $reviews = Review::all();
+        $comments = Comment::all();
+
+        return view('backend.index', compact('admins','users','tales',
+            'reviews', 'comments'));
     }
 
     /**

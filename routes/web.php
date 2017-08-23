@@ -17,6 +17,8 @@ Route::get('dreaming-yunhouse', 'staticPagesController@getDreamingYunhouse');
 Route::get('yunhouse-in-brief', 'staticPagesController@getYunhouseInBrief');
 Route::get('yunhouse-character', 'staticPagesController@getYunhouseCharacters');
 Route::get('welcome-to-yunhouse', 'staticPagesController@getYunhouseWelcome');
+Route::get('download', 'staticPagesController@getDownload');
+
 Route::get('yunhouse-character/{id}', ['as' => 'character.single', 'uses' => 'staticPagesController@getSingle']);
 
 
@@ -42,6 +44,9 @@ Route::get('yuntale/{slug}', ['as' => 'yuntale.single', 'uses' => 'YuntaleContro
 Route::get('comments/{id}', ['uses' => 'CommentsController@index', 'as' => 'comments.index']);
 
 Route::post('comments/{tale_id}', ['uses' => 'CommentsController@store', 'as' => 'comments.store']);
+
+Route::get('list-of-downloads', 'staticPagesController@getDownloadList');
+Route::get('download/{file}', ['as' => 'download.file', 'uses' => 'DownloadsController@getDownloadFile']);
 
 
 Auth::routes();
@@ -73,6 +78,7 @@ Route::resource('characters', 'CharactersController');
 Route::resource('tales', 'TalesController');
 Route::resource('reviews', 'ReviewsController');
 Route::resource('admins', 'AdminController');
+Route::resource('downloads', 'DownloadsController');
 
 
 /*

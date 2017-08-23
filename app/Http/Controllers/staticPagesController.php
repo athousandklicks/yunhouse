@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Tale;
 use App\Character;
+use App\Download;
 
 class staticPagesController extends Controller
 {
@@ -45,8 +46,15 @@ return view('frontend.dreaming_yunhouse');
     	return view('character.single',compact('characters'));
     }
 
-    public function getYunhouseWelcome(){
+    public function getDownloadList(){
 
+    	$downloads = Download::all();
+		return view('frontend.list-of-download',compact('downloads'));
     }
+
+    public function getDownloadFile($file_name) {
+    $file_path = public_path('download/'.$file_name);
+    return response()->download($file_path);
+  }
 
 }

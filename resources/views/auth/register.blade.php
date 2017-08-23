@@ -1,6 +1,6 @@
 @extends('pages-layout')
 
-@section('title', '| YUNHOUSE: Assorted London Tales about the Africa')
+@section('title', '| YUNHOUSE: Become a Member of Palavar Hall')
 
 @section('content')
 
@@ -10,7 +10,7 @@
                     <!-- user-login -->         
                     <div class="col-sm-4 col-sm-offset-4">
                         <div class="ragister-account">      
-                            <h1 class="section-title title">Become a Member of Palavar Hall</h1>
+                            <h1 class="section-title-sidebar title">Become a Member of Palavar Hall</h1>
                             
                             <form id="registation-form" name="registation-form" role="form" method="post" action="{{ route('register') }}">
                         {{ csrf_field() }}
