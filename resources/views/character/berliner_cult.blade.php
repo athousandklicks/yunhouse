@@ -1,4 +1,4 @@
-@extends('pages-layout')
+@extends('main')
 
 @section('title', "| The Berliner Cult (a.k.a The Core-23)")
 

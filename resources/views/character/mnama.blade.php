@@ -1,4 +1,4 @@
-@extends('pages-layout')
+@extends('main')
 
 @section('title', "| Big Mnama")
 

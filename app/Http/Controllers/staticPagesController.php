@@ -34,6 +34,12 @@ return view('frontend.dreaming_yunhouse');
 
 	}
 
+	public function gallery1884()
+	{
+		return view('frontend.1884-gallery');
+
+	}
+
 	public function getYunhouseCharacters()
 	{
 		 $characters = Character::all();

@@ -18,6 +18,8 @@ Route::get('yunhouse-in-brief', 'staticPagesController@getYunhouseInBrief');
 Route::get('yunhouse-character', 'staticPagesController@getYunhouseCharacters');
 Route::get('welcome-to-yunhouse', 'staticPagesController@getYunhouseWelcome');
 Route::get('download', 'staticPagesController@getDownload');
+Route::get('1884-gallery', 'staticPagesController@gallery1884');
+
 
 Route::get('yunhouse-character/{id}', ['as' => 'character.single', 'uses' => 'staticPagesController@getSingle']);
 
@@ -41,7 +43,7 @@ Route::get('palavar', 'characterController@getPalavar');
 Route::get('list-of-tales', 'YuntaleController@getTales');
 Route::get('yuntale/{slug}', ['as' => 'yuntale.single', 'uses' => 'YuntaleController@getSingle'])->where('slug', '[\w\d\-\_]+');
 
-Route::get('comments/{id}', ['uses' => 'CommentsController@index', 'as' => 'comments.index']);
+Route::get('comments/{slug}', ['uses' => 'CommentsController@index', 'as' => 'comments.index']);
 
 Route::post('comments/{tale_id}', ['uses' => 'CommentsController@store', 'as' => 'comments.store']);
 
@@ -79,6 +81,9 @@ Route::resource('tales', 'TalesController');
 Route::resource('reviews', 'ReviewsController');
 Route::resource('admins', 'AdminController');
 Route::resource('downloads', 'DownloadsController');
+
+Route::get('list-of-reviews', 'ReviewersController@getListOfReviews');
+Route::get('reviewers-text/{slug}', ['as' => 'reviews.single', 'uses' => 'ReviewersController@getSingleReview'])->where('slug', '[\w\d\-\_]+');
 
 
 /*

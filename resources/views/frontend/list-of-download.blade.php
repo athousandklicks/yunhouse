@@ -1,4 +1,4 @@
-@extends('pages-layout')
+@extends('main')
 
 @section('title', '| DOWNLOAD YUNHOUSE: Assorted London Tales about the Africa')
 
@@ -26,7 +26,7 @@
         <td>{{$download->id}}</td>
         <td>{{$download->filename}}</td>
         <td>{{$download->control}}</td>
-        <td>{!! Html::link('download/'.$download->control, $download->filename) !!}</td>
+        <td class="btn btn-primary"> <i class="fa fa-download" aria-hidden="true"></i> {!! Html::link('download/'.$download->control, $download->filename) !!}</td>
       </tr>
       @endforeach()
     </tbody>

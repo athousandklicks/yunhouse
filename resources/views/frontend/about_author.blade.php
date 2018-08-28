@@ -1,4 +1,4 @@
-@extends('pages-layout')
+@extends('main')
 
 @section('title', "| About Ad'Obe Obe")
 
@@ -160,8 +160,12 @@
 										</div>
 									</div>
 
+
+
 								</div><!--/.section -->	
-								
+						<div>
+                            <a href="/download/meet-adobe-obe.pdf" target="_blank"><img class="img-responsive" src="/images/frontend/pdf-icon.png" alt="" /></a>
+                        </div> 
 							</div>
 						</div>
 						

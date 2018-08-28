@@ -1,4 +1,4 @@
-@extends('pages-layout')
+@extends('main')
 
 @section('title', "| About Ad'Obe Obe")
 
@@ -7,7 +7,7 @@
 @section('content')
 
 <div class="page-breadcrumbs">
-                <h1 class="section-title">Yunhouse in Brief</h1>
+                <h1 class="section-title">The Yunhouse Story</h1>
             </div>
             <div class="section">
                 <div class="row">
@@ -45,6 +45,10 @@
 
                         <p class="lead">Readers are challenged to note the human condition implied in colonialism (following shortly after the Trans-Atlantic Holocaust) as a destiny altering transformation of the continent that cradled humanity. African readers in particular are challenged to recognise that colonialism has impacted on what they know and understand about who they really are, today, tomorrow, and for a long time to come.</p>
                                 </div>
+
+                        <div>
+                            <a href="/download/the-yunhouse-story.pdf" target="_blank"><img class="img-responsive" src="/images/frontend/pdf-icon.png" alt="" /></a>
+                        </div>        
 
                             </div>
 

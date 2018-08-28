@@ -11,7 +11,7 @@
                 @if (Auth::check())
 
                     <li class="dropdown">
-                      <a href="/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hello {{ Auth::user()->name }} <span class="caret"></span></a>
+                      <a href="/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="toplink">Welcome {{ Auth::user()->name }} </span><span class="caret"></span></a>
                       <ul class="dropdown-menu" role="menu">
                                     <li>
                                         <a href="{{ route('logout') }}"
@@ -29,7 +29,7 @@
 
                 @else
 
-                <li class="dropdown user-panel"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"><img src="/images/others/user-icon.png" alt="" /></a>
+                <li class="dropdown user-panel"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"><img src="/images/others/user-icon.png" alt="" />    <span class ="login-profile">Login | Register</span> </a>
                     <div class="dropdown-menu top-user-section">
                         <div class="top-user-form">
 

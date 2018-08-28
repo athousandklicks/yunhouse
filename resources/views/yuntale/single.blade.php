@@ -1,4 +1,4 @@
-@extends('pages-layout')
+@extends('main')
 
 <?php $titleTag = htmlspecialchars($tale->title); ?>
 
@@ -18,7 +18,7 @@
                     <div class="author-info">
                         @if (Auth::check())
                         <div id="breaking-news">
-                            <span><a href="{{ url('comments/'.$tale->id) }}">Join the Discussion in Palavar</a></span>
+                            <span><a href="{{ url('comments/'.$tale->slug) }}">Join the Discussion in Palavar</a></span>
                         </div>
                         @else
                         <div id="breaking-news">
@@ -30,7 +30,7 @@
                         </p>
                         @if (Auth::check())
                         <div id="breaking-news">
-                            <span><a href="{{ url('comments/'.$tale->id) }}">Join the Discussion in Palavar</a></span>
+                            <span><a href="{{ url('comments/'.$tale->slug) }}">Join the Discussion in Palavar</a></span>
                         </div>
                         @else
                         <div id="breaking-news">

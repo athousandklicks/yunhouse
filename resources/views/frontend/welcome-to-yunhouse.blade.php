@@ -1,4 +1,4 @@
-@extends('pages-layout')
+@extends('main')
 
 <?php $titleTag = htmlspecialchars($tale->title); ?>
 

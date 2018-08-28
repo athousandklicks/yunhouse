@@ -1,4 +1,4 @@
-@extends('pages-layout')
+@extends('main')
 
 @section('title', "| Dreaming Yunhouse")
 
@@ -47,6 +47,9 @@
 
                        </div>
 
+<div>
+                            <a href="/download/dreaming-yunhouse.pdf" target="_blank"><img class="img-responsive" src="/images/frontend/pdf-icon.png" alt="" /></a>
+                        </div> 
 
                    </div><!--/#site-content-->
 

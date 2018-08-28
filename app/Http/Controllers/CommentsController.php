@@ -19,11 +19,10 @@ class CommentsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($id)
+    public function index($slug)
     {
-        $tale = Tale::find($id);
-        $user = User::find($id);
-        return view('palavarhall.index',compact('tale', 'user'));
+        $tale = Tale::where('slug', '=', $slug)->first();
+        return view('palavarhall.index',compact('tale'));
     }
 
     /**

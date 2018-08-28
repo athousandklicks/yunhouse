@@ -36,7 +36,7 @@ class LoginController extends Controller
     return redirect()->intended('/');
 }*/
 
-   protected $redirectTo = '/';
+   protected $redirectTo = '/list-of-tales';
 
 
 

@@ -6,7 +6,7 @@
 
 
 <div class="blank">
-	<h2>Name of Reviewer: {{$reviews->name}}</h2>
+	<h2>Title: {{$reviews->name}}</h2>
 	<div class="blankpage-main">
 	<p>
 		{!!wordwrap($reviews->body,1500,"<p style='page-break-before: always'>",TRUE)!!}

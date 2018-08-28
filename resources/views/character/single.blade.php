@@ -1,4 +1,4 @@
-@extends('pages-layout')
+@extends('main')
 
 <?php $titleTag = htmlspecialchars($characters->name); ?>
 @section('title', "| $titleTag")
@@ -22,6 +22,11 @@
                             {!!$characters->body!!}
                         </p>
 
+                        <div>
+                            <img class="img-responsive" src="/images/frontend/pdf-icon.png" alt="" />{!! Html::link('download/'.$characters->name.'.pdf') !!}
+                        </div> 
+
+                        
                     </div>
 
 
