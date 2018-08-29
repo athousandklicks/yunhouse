@@ -23,10 +23,12 @@
                         </p>
 
                         <div>
-                            <img class="img-responsive" src="/images/frontend/pdf-icon.png" alt="" />{!! Html::link('download/'.$characters->name.'.pdf') !!}
+                         
+                            <a href="{{URL::to('/download/'.$characters->download_pdf.'.pdf')}}" target="_blank"><img class="img-responsive" src="/images/frontend/pdf-icon.png" alt="" /></a>
+
                         </div> 
 
-                        
+
                     </div>
 
 
