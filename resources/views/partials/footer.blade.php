@@ -11,9 +11,9 @@
             <li><a href="/about-author">ABOUT THE AUTHOR</a></li>
             <li><a href="/yunhouse-character">YUNHOUSE CHARACTERS</a></li>
             <li><a href="/list-of-tales">INTRO TALES</a></li>
-            <li><a href="/1884-gallery">1884 GALLERY</a></li>
-            <li><a href="/palavar">PALAVER HALL</a></li>
-            <li><a href="/list-of-downloads">REVIEWS</a></li>
+            {{-- <li><a href="/1884-gallery">1884 GALLERY</a></li> --}}
+            <li><a href="/debate-index">PALAVER HALL</a></li>
+            <li><a href="/list-of-reviews">REVIEWS</a></li>
           </ul> 
         </div>
       </div>

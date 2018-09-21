@@ -142,7 +142,7 @@
 					</div><!--/.col-sm-9 -->	
 					
 					<div class="col-sm-3">
-                        @include('partials.right-side-bar')
+                        @include('partials.palaver-right-side-bar')
                     </div>
 				</div>				
 			</div><!--/.section-->

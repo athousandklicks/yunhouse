@@ -17,7 +17,7 @@
 			@yield('content')
 		</div>
 
-		@include('partials.footer')
+		@include('partials.palaver-footer')
 	</div><!--/#main-wrapper-->    
 
 

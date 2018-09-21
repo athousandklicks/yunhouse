@@ -24,7 +24,7 @@ Route::get('1884-debate', 'palaverController@debate1884');
 Route::get('tale-of-the-month', 'palaverController@taleOfTheMonth');
 Route::get('excerpt-of-the-week', 'palaverController@excerptOfTheWeek');
 Route::get('authors-blog', 'palaverController@authorsBlog');
-Route::get('yunhouse-quotes', 'palaverController@yunhouseQuotes');
+Route::get('palaver-quotes', 'palaverController@yunhouseQuotes');
 
 Route::get('list-of-tales', 'YuntaleController@getTales');
 Route::get('yuntale/{slug}', ['as' => 'yuntale.single', 'uses' => 'YuntaleController@getSingle'])->where('slug', '[\w\d\-\_]+');

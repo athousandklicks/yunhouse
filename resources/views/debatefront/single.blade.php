@@ -104,7 +104,7 @@ this.page.identifier = disqus_identifier; // Replace PAGE_IDENTIFIER with your p
 
 
 <div class="col-sm-3">
-    @include('partials.right-side-bar')
+    @include('partials.palaver-right-side-bar')
 </div>
 </div>              
 </div><!--/.section-->

@@ -91,8 +91,8 @@ class TalesController extends Controller
         $banner_image=$request->coming_soon;
         if($banner_image){
           $imageName=$banner_image->getClientOriginalName();
-          $banner_image->move('images/debates/',$imageName);
-          $debates['coming_soon']=$imageName;
+          $banner_image->move('images/tales/',$imageName);
+          $tales['coming_soon']=$imageName;
       }
   }
 
@@ -176,8 +176,8 @@ class TalesController extends Controller
       $banner_image=$request->coming_soon;
       if($banner_image){
           $imageName=$banner_image->getClientOriginalName();
-          $banner_image->move('images/debates/',$imageName);
-          $debates['coming_soon']=$imageName;
+          $banner_image->move('images/tales/',$imageName);
+          $tales['coming_soon']=$imageName;
       }
 
         $tales -> save(); //save to the database
