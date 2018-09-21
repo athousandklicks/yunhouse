@@ -5,7 +5,7 @@
             <div class="ragister-account account-login">  
 
                 <h1 class="section-title-sidebar title"><a href="/list-of-tales"><span class="upper-case">Go to Palaver Hall</span></a></h1>
-                <p>You are welcome to Yunhouse's Palaver Hall where discussions about "The Africa" is alive. Please, join the conversation today by reading some of Yunhouse's interesting Tales and have your say about them in Palaver Hall. Others are eagerly waiting to hear what you have to say</p>.
+                <p>Yunhouse generation of Africans watched Europeans hijack and bastardise the destiny of the continent of Africa and African Peoples. Palaver Hall is the forum where you are free to express your opinion on this unsurpassable episode of man’s inhumanity to man. </p>.
             </div>
             <div><p class="buy-yunhouse">Buy Yunhouse</p></div>
             <div class="amazon_button">
@@ -55,6 +55,8 @@
             <div class="downloads-button">
                 <span><a href="/list-of-downloads"><img class="img-responsive" src="/images/frontend/download-button.png" alt="" /></a></span>
             </div>
+
+            
             
 
             <hr class="style1">
@@ -62,12 +64,12 @@
              <div class="ragister-account account-login"> 
 
                 <h1 class="section-title-sidebar title"><span class="login-profile">The Africa Lives in Palavar Hall!<br/>Join the Discussion</span> </h1>
-                <h1 class="section-title-sidebar title"><a href="/register"> <span tooltip="You are welcome to Yunhouse's Palaver Hall where discussions about 'The Africa' is alive. Please, join the conversation today by reading some of Yunhouse's interesting Tales and have your say about them in Palaver Hall. Others are eagerly waiting to hear what you have to say">Click here to create an Account  <i class="fa fa-mouse-pointer" aria-hidden="true"></i></span></a></h1>
-                <hr class="style1">
+                <h1 class="section-title-sidebar title"><a href="/debate-index"> <span tooltip="Yunhouse generation of Africans watched Europeans hijack and bastardise the destiny of the continent of Africa and African Peoples. Palaver Hall is the forum where you are free to express your opinion on this unsurpassable episode of man’s inhumanity to man. ">Enter Palaver Hall  <i class="fa fa-mouse-pointer" aria-hidden="true"></i></span></a></h1>
+                {{-- <hr class="style1">
 
-                <h1 class="section-title-sidebar title"> <span class ="login-profile">Already a Member? login now</span></h1>
+                <h1 class="section-title-sidebar title"> <span class ="login-profile">Already a Member? login now</span></h1> --}}
                 
-                <form id="registation-form" role="form" method="POST" action="{{ route('login') }}">
+                {{-- <form id="registation-form" role="form" method="POST" action="{{ route('login') }}">
                     {{ csrf_field() }}
 
                     <div class="form-group {{ $errors->has('email') ? ' has-error' : '' }}">
@@ -100,14 +102,16 @@
                     <div class="submit-button text-center">
                         <button type="submit" class="btn btn-primary">Enter Palavar Hall</button>
                     </div>
-                </form> 
-                <div class="devider text-center"><span class="login-profile">Social Login</span></div>
-                <div class="login-options text-center">
+                </form>  --}}
+
+
+                {{-- <div class="devider text-center"><span class="login-profile">Social Login</span></div> --}}
+                {{-- <div class="login-options text-center">
                     <a href="/auth/facebook"><i class="fa fa-facebook-official fa-2x" ></i></a>
                     <a href="/auth/twitter"> <i class="fa fa-twitter-square fa-2x" ></i></i></a>
                     <a href="/auth/google"><i class="fa fa-google-plus-square fa-2x" ></i></a>
 
-                </div>
+                </div> --}}
 
             </div>
         </div><!--/post--> 

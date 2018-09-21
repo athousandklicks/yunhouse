@@ -6,7 +6,11 @@
 
             </div>              
             <div id="weather"></div>
+
             <div class="searchNlogin">
+                <span class="toplink">Contact Us: info@yunhouse.co.uk</span>
+            </div>
+            {{-- <div class="searchNlogin">
                 <ul>
                 @if (Auth::check())
 
@@ -85,7 +89,7 @@
                     <input type="text" class="search-form" autocomplete="off" placeholder="Type & Press Enter">
                 </form>
             </div> <!--/.search--> 
-        </div><!-- searchNlogin -->
+        </div><!-- searchNlogin --> --}}
     </div>
 </div>
 </div>

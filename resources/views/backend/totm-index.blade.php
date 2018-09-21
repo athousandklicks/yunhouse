@@ -28,7 +28,15 @@
 
       {{csrf_field()}}
 
-      {!! Form::hidden('id', $tales->id, ['class' => 'form-control']) !!}
+    {!! Form::hidden('id', $tales->id, ['class' => 'form-control']) !!} 
+
+      {{ Form::label('featured_tale', 'FEATURED') }}
+          {{ Form::select('featured_tale', 
+          ['0' => 'DO NOT FEATURE', '1' => 'FEATURE'], null,array('class'=>'form-control')) }}
+      
+        {{ Form::label('body', 'Tale:') }}
+          {{ Form::textarea('body', null, array('class'=>'form-control')) }}
+
 
       {{ Form::submit('Make Tale of the Month', array('class'=>'btn btn-success btn-lg', 'style' => 'margin-top: 20px;' )) }}
       {!! Form::close() !!}

@@ -37,8 +37,14 @@
 
 					{{csrf_field()}}
 
-					{{ Form::label('name', 'Name of Reviewer:') }}
-					{{ Form::text('name', null, array('class'=>'form-control', 'required' => '', 'maxlength'=>'255')) }}
+					{{ Form::label('reviewer', 'Name of Reviewer:') }}
+					{{ Form::text('reviewer', null, array('class'=>'form-control', 'required' => '', 'maxlength'=>'255')) }}
+
+					{{ Form::label('title', 'Title of Article:') }}
+					{{ Form::text('title', null, array('class'=>'form-control', 'required' => '', 'maxlength'=>'255')) }}
+
+					{{ Form::label('intro', 'Information About Yunhouse:') }}
+					{{ Form::textarea('intro', null, array('class'=>'form-control')) }}
 
 					{{ Form::label('body', 'Review:') }}
 					{{ Form::textarea('body', null, array('class'=>'form-control')) }}
@@ -46,10 +52,16 @@
 					<br>
 					<hr>
 
+					{{ Form::label('image_link','Upload Image (Optional)') }}
+					{{ Form::file('image_link', array('class'=>'btn btn-success btn-sm')) }}
+					
 					<br/>
+					<hr>
 					{{ Form::label('media','Upload Audio File') }}
 					{{ Form::file('media', array('class'=>'btn btn-success btn-sm')) }}
-					<br/>					  
+					<br/>	
+
+
 
 					<!-- reset buttons -->
 					{{ Form::reset('Reset', array('id'=>'','class'=>'btn btn-success btn-sm')) }}

@@ -11,9 +11,9 @@ use App\User;
 class CommentsController extends Controller
 {
 
-      public function __construct() {
-        $this->middleware('auth');
-    }
+    //   public function __construct() {
+    //     $this->middleware('auth');
+    // }
     /**
      * Display a listing of the resource.
      *
@@ -22,7 +22,7 @@ class CommentsController extends Controller
     public function index($slug)
     {
         $tale = Tale::where('slug', '=', $slug)->first();
-        return view('palavarhall.index',compact('tale'));
+        return view('palaverhall.index',compact('tale'));
     }
 
     /**

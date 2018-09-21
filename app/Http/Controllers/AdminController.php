@@ -10,6 +10,8 @@ use App\User;
 use App\Tale;
 use App\Review;
 use App\Comment;
+use App\Debate;
+use App\Tag;
 
 use Session;
 
@@ -38,9 +40,11 @@ class AdminController extends Controller
         $tales = Tale::all();
         $reviews = Review::all();
         $comments = Comment::all();
+        $debates = Debate::all();
+        $tags = Tag::all();
 
         return view('backend.index', compact('admins','users','tales',
-            'reviews', 'comments'));
+            'reviews', 'comments', 'debates', 'tags'));
     }
 
     /**

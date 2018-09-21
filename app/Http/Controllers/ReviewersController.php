@@ -91,7 +91,7 @@ class ReviewersController extends Controller
 
         public function getListOfReviews()
     {
-        $reviews = Review::orderBy('created_at', 'asc')->paginate(5);
+        $reviews = Review::orderBy('created_at', 'asc')->paginate(2);
         //dd($tales);
         return view('review.list-of-reviewers-reviews',compact('reviews'));
     }

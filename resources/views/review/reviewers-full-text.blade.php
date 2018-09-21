@@ -16,6 +16,12 @@
                 <div class="author-details">
 
                     <div class="author-info">
+                        <p class="lead">
+                        {!! $reviews->intro !!}
+                        </p>
+                        <p class="lead"><span class="league-result">Reviewer: 
+                        {!! $reviews->reviewer !!}</span>
+                        </p>
                         
                         <p class="lead">
                             {!! $reviews->body !!}

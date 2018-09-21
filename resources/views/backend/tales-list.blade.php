@@ -5,6 +5,7 @@
 
 
 @section('content')
+<div class="blank">
 
 <div class="chit-chat-layer1">
   <div class="col-md-12 chit-chat-layer1-left">
@@ -23,13 +24,13 @@
         <thead>
           <tr>
             <th>#</th>
-
+            <th>Thumbnail</th>
             <th>Title</th>
             <th>Tale</th>
             <th>TOTM</th>
             <th>Status</th>
             <th>View</th>
-            <th>Edit</th>
+            <th>Edit/Make TOTM</th>
             <th>Delete</th>
           </tr>
         </thead>
@@ -37,6 +38,9 @@
          @foreach($tales as $tale) 
          <tr>
           <td>{{$tale->id}}</td>
+          
+          <td><img src="/images/tales/{{$tale->image_link}}" width="50" height="50" alt="image description"></td>
+          
           <td>{{$tale->title}}</td>                       
           <td>{{strip_tags(str_limit($tale->body, 100, '...'))}}</td>
 
@@ -53,7 +57,7 @@
           @if ($tale->published == 1)
           <td> <a class = "btn btn-success">Published</td>  
           @else
-          <td><a class = "btn btn-default">Unpublished</td>  
+          <td><a class = "btn btn-danger">Unpublished</td>  
           @endif
 
           <td>
@@ -83,7 +87,7 @@
   </div>
 </div>
 </div>
-
+</div>
 <div class="clearfix"> </div>
 
 
@@ -93,5 +97,6 @@
 
 
 </div>
+
 
 @endsection

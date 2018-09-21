@@ -49,11 +49,53 @@
 
                                 <li class="sports"><a href="/yunhouse-character">Yunhouse Characters</a></li>
 
-                                <li class="sports"><a href="/list-of-tales">Intro Tales</a></li>
+                                <li class="sports"><a href="/list-of-tales">Yunhouse Tales</a></li>
 
-                                <li class="sports"><a href="/1884-gallery">1884 Gallery</a></li>
+                               {{--  <li class="sports"><a href="/list-of-tales">Intro Tales</a></li>
 
-                                @if (Auth::check())
+                               <li class="sports"><a href="/1884-gallery">1884 Gallery</a></li> --}}
+
+                               {{--  <li class="sports"><a href="/list-of-tales">Enter Palavar Hall</a></li> --}}
+                               <li class="environment dropdown mega-dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Palavar Hall</a>
+                                <div class="dropdown-menu mega-menu">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+
+                                                <div class="entry-thumbnail">
+                                                <a href="/list-of-tales">
+                                                    <img class="img-responsive" src="/images/frontend/palaver-intro-1.jpg" alt="" /> 
+                                                    </a>
+                                                </div>                                              
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="entry-thumbnail">
+                                                <a href="/list-of-tales">
+                                                    <img class="img-responsive" src="/images/frontend/palaver-intro-2.jpg" alt="" /> 
+                                                    </a>
+                                                </div>  
+                                            </div>
+                                            <div class="col-sm-6">
+                                            <a href="/list-of-tales">
+                                                <img class="img-responsive" src="/images/frontend/palaver-banner.jpg" alt="" />
+                                                </a>
+                                                
+                                                <h2 class="entry-title"> Yunhouse generation of Africans
+                                                    watched Europeans hijack and bastardise
+                                                    the destiny of the continent of Africa and African Peoples.
+                                                    Palaver Hall is the forum where you are free to express your opinion
+                                                    on this unsurpassable episode of man’s inhumanity to man. </h2>
+                                                    <a href="/debate-index">
+                                                    <img class="img-responsive" src="/images/frontend/enter-palaver.jpg" alt="" />
+                                                    </a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                {{-- @if (Auth::check())
                                 <li class="sports"><a href="/list-of-tales">Palavar Hall</a></li>
                                 @else
                                 <li class="environment dropdown mega-dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Enter Palavar Hall</a>
@@ -62,7 +104,7 @@
                                             <div class="row">
                                                 <div class="col-sm-6">
                                                     <h2><b>About Palaver Hall</b></h2>
-                                                    <h2 class="entry-title"> Ad’Obe Obe has been resident in London since the Easter of 1974. He studied chemical engineering in Germany and philosophy in London. Ad’Obe Obe has been resident in London since the Easter of 1974. He studied chemical engineering in Germany and philosophy in London.<span class="read-more"><a href="/palavar">...Read More</a></span></h2>
+                                                    <h2 class="entry-title"> Ad’Obe Obe has been resident in London since the Easter of 1974. He studied chemical engineering in Germany and philosophy in London. Ad’Obe Obe has been resident in London since the Easter of 1974. He studied chemical engineering in Germany and philosophy in London.<span class="read-more"><a href="/list-of-tales">...Read More</a></span></h2>
                                                 </div>
 
                                                 <div class="col-sm-3">
@@ -99,15 +141,16 @@
                            </div>
                         </div>
                          </li>
-                   @endif
+                         @endif --}}
 
-                                    <li class="sports"><a href="/list-of-reviews">Reviews</a></li>
+                         
+                         <li class="sports"><a href="/list-of-reviews">Reviews</a></li>
 
-                                </ul>                   
-                            </nav>
-                            
-                        </div>
-                    </div> 
+                     </ul>                   
+                 </nav>
 
-                </div><!--/#navigation--> 
-            </div><!--/#navigation--> 
+             </div>
+         </div> 
+
+     </div><!--/#navigation--> 
+ </div><!--/#navigation--> 

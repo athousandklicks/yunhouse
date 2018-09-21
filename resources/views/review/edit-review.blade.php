@@ -33,34 +33,45 @@
    <div class="work-progres">
 
     <div class="table-responsive">
-    {!!Form::model($reviews, ['route'=>['reviews.update', $reviews->id], 'method' => 'PUT', 'files' => true, 'onsubmit' => 'return ConfirmSave()'])!!}  
+      {!!Form::model($reviews, ['route'=>['reviews.update', $reviews->id], 'method' => 'PUT', 'files' => true, 'onsubmit' => 'return ConfirmSave()'])!!}  
 
-     {{csrf_field()}}
+      {{csrf_field()}}
 
-     {!! Form::hidden('id', $reviews->id, ['class' => 'form-control']) !!}
+      {!! Form::hidden('id', $reviews->id, ['class' => 'form-control']) !!}
 
-     {{ Form::label('name', 'Edit Name:') }}
-     {{ Form::text('name', null, array('class'=>'form-control', 'required' => '', 'maxlength'=>'255')) }}
+      {{ Form::label('reviewer', 'Edit Name of Reviewer:') }}
+      {{ Form::text('reviewer', null, array('class'=>'form-control', 'required' => '', 'maxlength'=>'255')) }}
 
-     {{ Form::label('body', 'Edit Review:') }}
-     {{ Form::textarea('body', null, array('class'=>'form-control')) }}
+      {{ Form::label('title', 'Edit Title of Article:') }}
+      {{ Form::text('title', null, array('class'=>'form-control', 'required' => '', 'maxlength'=>'255')) }}
 
-     <br>
-          <hr>
+      {{ Form::label('intro', 'Edit Information About Yunhouse:') }}
+      {{ Form::textarea('intro', null, array('class'=>'form-control')) }}
 
-          {{ Form::label('media','Upload Media') }}
-          {{ Form::file('media', array('class'=>'btn btn-success btn-sm')) }}
-          <br/>           
+      {{ Form::label('body', 'Edit Review:') }}
+      {{ Form::textarea('body', null, array('class'=>'form-control')) }}
 
-          <!-- reset buttons -->
-          {{ Form::reset('Reset', array('id'=>'','class'=>'btn btn-success btn-sm')) }}
-          <br/>
+      <br>
+      <hr>
+
+      {{ Form::label('image_link','Upload Image (Optional)') }}
+      {{ Form::file('image_link', array('class'=>'btn btn-success btn-sm')) }}
+
+      <br>
+      <hr>
+      {{ Form::label('media','Upload Media') }}
+      {{ Form::file('media', array('class'=>'btn btn-success btn-sm')) }}
+      <br/>           
+
+      <!-- reset buttons -->
+      {{ Form::reset('Reset', array('id'=>'','class'=>'btn btn-success btn-sm')) }}
+      <br/>
 
 
-     {{ Form::submit('Save Changes', array('class'=>'btn btn-success btn-lg', 'style' => 'margin-top: 20px;' )) }}
-     {!! Form::close() !!}
-   </div>
- </div>
+      {{ Form::submit('Save Changes', array('class'=>'btn btn-success btn-lg', 'style' => 'margin-top: 20px;' )) }}
+      {!! Form::close() !!}
+    </div>
+  </div>
 </div>
 
 <div class="clearfix"> </div>

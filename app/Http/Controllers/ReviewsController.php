@@ -47,15 +47,28 @@ class ReviewsController extends Controller
     {
                        //validate data entry
         $this->validate($request, array(
-            'name' => 'required|max:256'
+            'reviewer' => 'required|max:256',
+            'title' => 'required|max:256'
             ));
 
         //dd($request);
         //Store into the database
         $reviews = new Review; 
-        $reviews -> name = $request -> name; 
+        $reviews -> reviewer = $request -> reviewer; 
+        $reviews -> title = $request -> title; 
+        $reviews -> intro = Purifier::clean($request -> intro); 
         $reviews -> body = Purifier::clean($request -> body); 
-        $reviews -> slug = rand(1, 100000000);
+        $reviews -> slug = rand().'_'.strtolower(preg_replace('/\s+/', '_', $request -> reviewer));
+
+        if ($request->hasFile('image_link')) {
+            $banner_image=$request->image_link;
+            if($banner_image){
+              $imageName=$banner_image->getClientOriginalName();
+              $banner_image->move('images/reviews/',$imageName);
+              $reviews['image_link']=$imageName;
+          }
+      }
+
 
         if ($request->hasFile('media')) {
             $media_file=$request->media;
@@ -111,22 +124,34 @@ class ReviewsController extends Controller
     {
         $reviews = Review::find($id);
             //validate data entry
-        if ($request->input('name') == $reviews->name) {
+        if ($request->input('title') == $reviews->title) {
             $this->validate($request, array(
-                'name' => ''
+            'title' => '',
+            'reviewer' => 'required|max:256'
                 ));
         }else{
             $this->validate($request, array(
-                'name' => 'required'
+            'reviewer' => 'required|max:256',
+            'title' => 'required|max:256'
                 ));
         }
 
         $reviews = Review::find($id);
 
-        $reviews -> name = $request->input('name');
-        $reviews -> body = Purifier::clean($request->input('body'));
-        $reviews -> slug = rand(1, 100000000);
+        $reviews -> reviewer = $request -> reviewer; 
+        $reviews -> title = $request -> title; 
+        $reviews -> intro = Purifier::clean($request -> intro); 
+        $reviews -> body = Purifier::clean($request -> body); 
+        // $reviews -> slug = rand().'_'.strtolower(preg_replace('/\s+/', '_', $request -> reviewer));
 
+
+
+        $banner_image=$request->image_link;
+        if($banner_image){
+          $imageName=$banner_image->getClientOriginalName();
+          $banner_image->move('images/reviews/',$imageName);
+          $reviews['image_link']=$imageName;
+      }
 
         $media_file=$request->media;
         if($media_file){

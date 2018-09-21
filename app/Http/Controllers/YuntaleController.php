@@ -13,12 +13,12 @@ class YuntaleController extends Controller
     	$tale = Tale::where('slug', '=', $slug)->first();
 
     	// return the view and pass in the post object
-    	return view('Yuntale.single',compact('tale'));
+    	return view('yuntale.single',compact('tale'));
     }
 
     	public function getTales()
 	{
-		$tales = Tale::orderBy('created_at', 'asc')->where('published', '=', true)->paginate(5);
+		$tales = Tale::orderBy('created_at', 'asc')->where('published', '=', true)->paginate(6);
         //dd($tales);
 		return view('yuntale.list-of-tales',compact('tales'));
 	}

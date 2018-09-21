@@ -23,8 +23,10 @@
         <thead>
           <tr>
             <th>#</th>
-
-            <th>Name</th>
+            <th>Thumbnail</th>
+            <th>Reviewer</th>
+            <th>Title</th>
+            <th>Intro</th>
             <th>Review</th>
             <th>View</th>
             <th>Edit</th>
@@ -35,7 +37,12 @@
          @foreach($reviews as $review) 
          <tr>
           <td>{{$review->id}}</td>
-          <td>{{$review->name}}</td>                       
+          <td><img src="/images/reviews/{{$review->image_link}}" width="50" height="50" alt="image description"></td>
+          <td>{{$review->reviewer}}</td> 
+          <td>{{$review->title}}</td>
+
+          <td>{{strip_tags(str_limit($review->intro, 200, '...'))}}</td>  
+
           <td>{{strip_tags(str_limit($review->body, 200, '...'))}}</td>
 
 

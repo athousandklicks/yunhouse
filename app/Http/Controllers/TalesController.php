@@ -12,9 +12,9 @@ class TalesController extends Controller
 {
 
   public function __construct()
-    {
-        $this->middleware('auth:admin');
-    }
+  {
+    $this->middleware('auth:admin');
+}
     /**
      * Display a listing of the resource.
      *
@@ -56,11 +56,13 @@ class TalesController extends Controller
      */
     public function store(Request $request)
     {
+
                      //validate data entry
         $this->validate($request, array(
             'title' => 'required|max:1000|unique:tales,title',
             'body'  => 'required',
-            'featured_tale'=>'image|mimes:png,jpg,jpeg|max:10000'
+            'image_link'=>'image|mimes:png,jpg,jpeg|max:10000',
+            'coming_soon'=>'image|mimes:png,jpg,jpeg|max:10000'
           //  'published'  => 'required|max:8'
             ));
 
@@ -76,14 +78,23 @@ class TalesController extends Controller
         
         $tales -> published = $request -> published; //assign the title
 
-if ($request->hasFile('featured_tale')) {
-        $banner_image=$request->featured_tale;
+        if ($request->hasFile('image_link')) {
+            $banner_image=$request->image_link;
+            if($banner_image){
+              $imageName=$banner_image->getClientOriginalName();
+              $banner_image->move('images/tales/',$imageName);
+              $tales['image_link']=$imageName;
+          }
+      }
+
+      if ($request->hasFile('coming_soon')) {
+        $banner_image=$request->coming_soon;
         if($banner_image){
           $imageName=$banner_image->getClientOriginalName();
-          $banner_image->move('images/tales/',$imageName);
-          $tales['featured_tale']=$imageName;
+          $banner_image->move('images/debates/',$imageName);
+          $debates['coming_soon']=$imageName;
       }
-}
+  }
 
 
         $tales -> save(); //save to the database
@@ -130,18 +141,19 @@ if ($request->hasFile('featured_tale')) {
      */
     public function update(Request $request, $id)
     {
-       $tales = Tale::find($id);
+     $tales = Tale::find($id);
             //validate data entry
-       if ($request->input('title') == $tales->title) {
+     if ($request->input('title') == $tales->title) {
         $this->validate($request, array(
             'body'  => 'required',
-            'featured_tale'=>'image|mimes:png,jpg,jpeg|max:10000'
+            'image_link'=>'image|mimes:png,jpg,jpeg|max:10000',
+            'coming_soon'=>'image|mimes:png,jpg,jpeg|max:10000'
             ));
     }else{
         $this->validate($request, array(
             'title' => 'required|max:1000|unique:tales,title',
             'body'  => 'required',
-            'featured_tale'=>'image|mimes:png,jpg,jpeg|max:10000'
+            'image_link'=>'image|mimes:png,jpg,jpeg|max:10000'
             ));
     }
     $tales = Tale::find($id);
@@ -152,12 +164,20 @@ if ($request->hasFile('featured_tale')) {
     $tales -> slug = strtolower(preg_replace('/\s+/', '_', $request -> title));
 
         $tales -> published = $request -> published; //assign the title
+        $tales -> featured_tale = $request -> featured_tale;
 
-        $banner_image=$request->featured_tale;
+        $banner_image=$request->image_link;
         if($banner_image){
           $imageName=$banner_image->getClientOriginalName();
           $banner_image->move('images/tales/',$imageName);
-          $tales['featured_tale']=$imageName;
+          $tales['image_link']=$imageName;
+      }
+
+      $banner_image=$request->coming_soon;
+      if($banner_image){
+          $imageName=$banner_image->getClientOriginalName();
+          $banner_image->move('images/debates/',$imageName);
+          $debates['coming_soon']=$imageName;
       }
 
         $tales -> save(); //save to the database
@@ -177,15 +197,15 @@ if ($request->hasFile('featured_tale')) {
     public function destroy($id)
     {
         $tales = Tale::find($id);
-         $tales->delete();
-         return redirect()->route('tales.index');
+        $tales->delete();
+        return redirect()->route('tales.index');
     }
 
 
     public function totm($id)
     {
-    //    $featured_tales = Tale::where('featured_tales', '=', 1)->first();
-    //    $featured_tales -> featured_tales = 0;
+    //    $image_links = Tale::where('image_links', '=', 1)->first();
+    //    $image_links -> image_links = 0;
 
         //retrive post from DB and save to a variable
         $tales = Tale::find($id);
@@ -195,9 +215,11 @@ if ($request->hasFile('featured_tale')) {
 
     public function updateTotm(Request $request, $id)
     {
+        //dd($request);
         //retrive post from DB and save to a variable
         $tales = Tale::find($id);
-        $tales -> title = $request->input(1);
+        $tales -> title = $request->input('title');
+        $tales -> featured_tale = $request -> featured_tale;
         //return the view and pass in the variable already created
         return view('backend.tales-list',compact('tales'));
     }

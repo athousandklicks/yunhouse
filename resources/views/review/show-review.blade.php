@@ -6,8 +6,12 @@
 
 
 <div class="blank">
-	<h2>Title: {{$reviews->name}}</h2>
+	<h2>Title: {{$reviews->title}}</h2>
 	<div class="blankpage-main">
+<img class="img-responsive" src="{{asset('images/reviews/'.$reviews->image_link)}}" alt="" />
+	<p>{!!$reviews->intro!!}</p>
+	<p>{{$reviews->reviewer}}</p>
+
 	<p>
 		{!!wordwrap($reviews->body,1500,"<p style='page-break-before: always'>",TRUE)!!}
 		</p>

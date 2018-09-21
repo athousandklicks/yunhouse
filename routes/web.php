@@ -18,7 +18,23 @@ Route::get('yunhouse-in-brief', 'staticPagesController@getYunhouseInBrief');
 Route::get('yunhouse-character', 'staticPagesController@getYunhouseCharacters');
 Route::get('welcome-to-yunhouse', 'staticPagesController@getYunhouseWelcome');
 Route::get('download', 'staticPagesController@getDownload');
-Route::get('1884-gallery', 'staticPagesController@gallery1884');
+
+Route::get('1884-gallery', 'palaverController@gallery1884');
+Route::get('1884-debate', 'palaverController@debate1884');
+Route::get('tale-of-the-month', 'palaverController@taleOfTheMonth');
+Route::get('excerpt-of-the-week', 'palaverController@excerptOfTheWeek');
+Route::get('authors-blog', 'palaverController@authorsBlog');
+Route::get('yunhouse-quotes', 'palaverController@yunhouseQuotes');
+
+Route::get('list-of-tales', 'YuntaleController@getTales');
+Route::get('yuntale/{slug}', ['as' => 'yuntale.single', 'uses' => 'YuntaleController@getSingle'])->where('slug', '[\w\d\-\_]+');
+
+Route::get('list-of-debates', 'FrontDebateController@getDebates');
+Route::get('debate/{slug}', ['as' => 'frontdebate.single', 'uses' => 'FrontDebateController@getSingle'])->where('slug', '[\w\d\-\_]+');
+Route::get('debate-index', 'FrontDebateController@index');
+
+
+// Route::get('index', ['as' => 'frontdebate.index', 'uses' => 'FrontDebateController@currentDebate'])->where('active_debate', '1');
 
 
 Route::get('yunhouse-character/{id}', ['as' => 'character.single', 'uses' => 'staticPagesController@getSingle']);
@@ -40,8 +56,6 @@ Route::get('nkungolo', 'characterController@getNkungolo');
 Route::get('ogesayi', 'characterController@getOgesayi');
 Route::get('palavar', 'characterController@getPalavar');
 
-Route::get('list-of-tales', 'YuntaleController@getTales');
-Route::get('yuntale/{slug}', ['as' => 'yuntale.single', 'uses' => 'YuntaleController@getSingle'])->where('slug', '[\w\d\-\_]+');
 
 Route::get('comments/{slug}', ['uses' => 'CommentsController@index', 'as' => 'comments.index']);
 
@@ -74,13 +88,16 @@ Route::get('auth/{provider}/callback', 'Auth\RegisterController@handleProviderCa
 |--------------------------------------------------------------------------
 */
 Route::get('tales/totm/{id}', ['as'=>'tales.totm', 'uses' => 'TalesController@totm']);
-Route::post('tales/update-totm/{id}', ['as'=>'tales.update-totm', 'uses' => 'TalesController@updateTotm']);
+Route::put('tales/update-totm/{id}', ['as'=>'tales.update-totm', 'uses' => 'TalesController@updateTotm']);
 
 Route::resource('characters', 'CharactersController');
 Route::resource('tales', 'TalesController');
+Route::resource('debates', 'DebateController');
+Route::resource('tags', 'TagController');
 Route::resource('reviews', 'ReviewsController');
 Route::resource('admins', 'AdminController');
 Route::resource('downloads', 'DownloadsController');
+Route::resource('articleimages', 'ArticleImagesController', ['except' => ['create']]);
 
 Route::get('list-of-reviews', 'ReviewersController@getListOfReviews');
 Route::get('reviewers-text/{slug}', ['as' => 'reviews.single', 'uses' => 'ReviewersController@getSingleReview'])->where('slug', '[\w\d\-\_]+');

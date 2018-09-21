@@ -33,39 +33,50 @@
    <div class="work-progres">
 
     <div class="table-responsive">
-    {!!Form::model($tales, ['route'=>['tales.update', $tales->id], 'method' => 'PUT', 'files' => true, 'onsubmit' => 'return ConfirmSave()'])!!}  
+      {!!Form::model($tales, ['route'=>['tales.update', $tales->id], 'method' => 'PUT', 'files' => true, 'onsubmit' => 'return ConfirmSave()'])!!}  
 
-     {{csrf_field()}}
+      {{csrf_field()}}
 
-     {!! Form::hidden('id', $tales->id, ['class' => 'form-control']) !!}
-
-     {{ Form::label('title', 'Edit Title:') }}
-     {{ Form::text('title', null, array('class'=>'form-control', 'required' => '', 'maxlength'=>'255')) }}
-
-     {{ Form::label('body', 'Edit Tale:') }}
-     {{ Form::textarea('body', null, array('class'=>'form-control')) }}
-
-     <br>
-          <hr>
-          {{ Form::label('published', 'Do you want to Edit Publish status?') }}
-          
-          {{ Form::select('published', 
-          ['0' => 'UNPUBLISH THIS TALE', '1' => 'PUBLISH THIS TALE'], null,array('class'=>'form-control')) }}
-
-          <br/>
-          {{ Form::label('featured_tale','Upload Tale Banner Image') }}
-          {{ Form::file('featured_tale', array('class'=>'btn btn-success btn-sm')) }}
-          <br/>           
-
-          <!-- reset buttons -->
-          {{ Form::reset('Reset', array('id'=>'','class'=>'btn btn-success btn-sm')) }}
-          <br/>
+      {!! Form::hidden('id', $tales->id, ['class' => 'form-control']) !!}
 
 
-     {{ Form::submit('Save Changes', array('class'=>'btn btn-success btn-lg', 'style' => 'margin-top: 20px;' )) }}
-     {!! Form::close() !!}
-   </div>
- </div>
+      {{ Form::label('title', 'Edit Title:') }}
+      {{ Form::text('title', null, array('class'=>'form-control', 'required' => '', 'maxlength'=>'255')) }}
+
+      {{ Form::label('body', 'Edit Tale:') }}
+      {{ Form::textarea('body', null, array('class'=>'form-control')) }}
+
+      <br>
+      <hr>
+      {{ Form::label('published', 'Do you want to Edit Publish status?') }}
+
+      {{ Form::select('published', 
+      ['0' => 'UNPUBLISH THIS TALE', '1' => 'PUBLISH THIS TALE'], null,array('class'=>'form-control')) }}
+
+      <br>
+      <hr>
+      {{ Form::label('featured_tale', 'MAKE FEATURED TALE') }}
+      {{ Form::select('featured_tale', 
+      ['0' => 'DO NOT FEATURE', '1' => 'FEATURE'], null,array('class'=>'form-control')) }}
+
+      <br/>
+      {{ Form::label('image_link','Upload Tale Banner Image') }}
+      {{ Form::file('image_link', array('class'=>'btn btn-success btn-sm')) }}
+      <br/>  
+
+      {{ Form::label('coming_soon','Upload Coming Soon Image') }}
+      {{ Form::file('coming_soon', array('class'=>'btn btn-success btn-sm')) }}     
+      <br/>         
+
+      <!-- reset buttons -->
+      {{ Form::reset('Reset', array('id'=>'','class'=>'btn btn-success btn-sm')) }}
+      <br/>
+
+
+      {{ Form::submit('Save Changes', array('class'=>'btn btn-success btn-lg', 'style' => 'margin-top: 20px;' )) }}
+      {!! Form::close() !!}
+    </div>
+  </div>
 </div>
 
 <div class="clearfix"> </div>

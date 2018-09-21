@@ -25,6 +25,8 @@
 		<div class="inner-block">
 			@yield('content')
 		</div>	
+		
+		@yield('scripts')
 
 	@include('partials._cabalfooter')
 
