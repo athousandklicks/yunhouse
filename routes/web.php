@@ -98,6 +98,7 @@ Route::resource('reviews', 'ReviewsController');
 Route::resource('admins', 'AdminController');
 Route::resource('downloads', 'DownloadsController');
 Route::resource('articleimages', 'ArticleImagesController', ['except' => ['create']]);
+Route::resource('comingsoon', 'ComingSoonController', ['except' => ['create']]);
 
 Route::get('list-of-reviews', 'ReviewersController@getListOfReviews');
 Route::get('reviewers-text/{slug}', ['as' => 'reviews.single', 'uses' => 'ReviewersController@getSingleReview'])->where('slug', '[\w\d\-\_]+');

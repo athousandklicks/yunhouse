@@ -1,13 +1,13 @@
 @extends('cabal_layout')
 
-@section('title', '| Add Review')
+@section('title', '| Add an Image')
 
 
 @section('content')
 
 
 <div class="inbox">
-	<h2>Add a Review </h2>
+	<h2>List of Article Images </h2>
 	<div class="row">
 		<div class="col-md-8 compose-right">
 			<div class="inbox-details-default">
@@ -16,7 +16,7 @@
 				</div>
 				<div class="inbox-details-body">
 					<div class="alert alert-info">
-						Please choose an Image to add
+						List of Article Images
 					</div>
 
 					<table class="table">
@@ -50,7 +50,7 @@
 				</div>
 				<div class="inbox-details-body">
 					<div class="alert alert-info">
-						Please all fields are required in order to add new review
+						Please choose an Image to add
 					</div>
 
 					{!! Form::open(['route' => 'articleimages.store', 'method' => 'POST', 'files' => true]) !!}
@@ -62,7 +62,7 @@
 					<!-- reset buttons -->
 					{{ Form::reset('Reset', array('id'=>'','class'=>'btn btn-success btn-sm')) }}
 					<br/>
-					{{ Form::submit('Save Review', array('class'=>'btn btn-success btn-lg', 'style' => 'margin-top: 20px;' )) }}
+					{{ Form::submit('Save Image', array('class'=>'btn btn-success btn-lg', 'style' => 'margin-top: 20px;' )) }}
 					{!! Form::close() !!}
 
 				</div>

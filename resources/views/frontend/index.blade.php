@@ -10,21 +10,11 @@
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2">
                 <div class="twitter-feeds">
+                @foreach($comingsoon as $coming) 
                     <div class="twitter-feed">
-
-
-                        <p>How about a letter to Mother Africa. Tell her how her descendants have evolved, the hatred, the love, the variety of skin colours, the multiplicity of human habits as in cultures and traditions across the globe. Millennia of everything human, the wars, the atrocities, man’s inhumanity to man… Can you imagine Fleet Street reaction if the story had been that the mother of the entire human race was European?</p>
+                        <td><img src="/images/comingsoon/{{$coming->image_link}}"  height="150" width="750" alt=""></td>
                     </div>
-                    <div class="twitter-feed">
-
-
-                        <p>...regarded by Africans all over the world as their intellectual property since that day a renegade group of Africans legally gained material possession of the building and declared it a Colony of Africa in the year Nineteen Hundred And Fifty-One – Anno Domini.</p>
-                    </div>
-                    <div class="twitter-feed">
-
-
-                        <p>Picture categorised Africans who fought and won The First Battle For Yunhouse as “Radical Blacks” whose views on Africa would subsequently be fitted with caps of quotation marks before they could sit in its editorial pages. </p>
-                    </div>
+                  @endforeach
                 </div>
             </div>
         </div>

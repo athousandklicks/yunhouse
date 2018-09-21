@@ -4,15 +4,18 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Tale;
+use App\ArticleImage;
 use App\Character;
 use App\Download;
+use App\ComingSoon;
 
 class staticPagesController extends Controller
 {
 	public function getIndex()
 	{
 		$tales = Tale::all();
-		return view('frontend.index');
+		$comingsoon = ComingSoon::where('status', '=', true)->get();
+		return view('frontend.index', compact('comingsoon'));
 	}
 
 

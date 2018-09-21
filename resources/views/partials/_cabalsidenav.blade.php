@@ -79,6 +79,13 @@
 			</ul>
 		</li>
 
+		<li id="menu-academico" ><a href="#"><i class="fa fa-photo"></i><span>Add Coming Soon Images</span><span class="fa fa-angle-right" style="float: right"></span></a>
+			<ul id="menu-academico-sub" >
+				<li id="menu-academico-boletim" ><a href="{{route('comingsoon.index')}}">Add Image</a></li>
+
+			</ul>
+		</li>
+
 
 		<li id="menu-academico" ><a href="#"><i class="fa fa-photo"></i><span>Manage Comments</span><span class="fa fa-angle-right" style="float: right"></span></a>
 			<ul id="menu-academico-sub" >
